@@ -6,10 +6,105 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
 
+  <main class="mt-5">
+    <!--  -->
+    <div class="container">
+      <div class="row">
+        <!-- Pasos -->
+        <div class="col-md-8">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the first item's accordion body.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                  being filled with some actual content.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the space to make it look, at least at first
+                  glance, a bit more representative of how this would look in a real-world application.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contenido secundario -->
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="card-header py-3 fw-bold txt:uppercase">
+              configurador de pc a medida
+            </div>
+            <div class="card-body">
+              <h6 class="mb-4">¡Haz tu computadora por piezas o PC a la carta!</h6>
+              <p class="card-text small text-muted">
+                Utiliza nuestro configurador para hacer tu PC a medida. Solo tienes que elegir los componentes y el
+                sistema te mostrará el precio final.
+              </p>
+            </div>
+          </div>
+
+          <div class="alert alert-primary alert-dismissible fade show small" role="alert">
+            El configurador esta diseñado para ofrecer componentes compatibles lo mas precisamente posible, sin embargo
+            pueden surgir incompatibilidades en algunos casos debido a la gran cantidad de variables al ensamblar un
+            equipo. Si surge alguna incompatibilidad nosotros lo contactaremos para ofrecerle alguna alternativa que la
+            solucione.
+            <button type="button" class="btn-close btn-sm" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header py-3 fw-bold txt:uppercase">
+              Total acumulado
+            </div>
+            <div class="card-body">
+              <h6>$<span id="total">0.00</span></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- <script src="../js/configurar_pc.js"></script> -->
 </body>
 
 </html>
