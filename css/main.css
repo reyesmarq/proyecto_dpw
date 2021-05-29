@@ -1,0 +1,104 @@
+:root {
+  --carousel-item-height: 320px;
+}
+
+/********************************************************
+ * Estilos para modificar bootstrap
+ *******************************************************/
+
+.carousel\:item {
+  height: var(--carousel-item-height);
+}
+
+.carousel\:item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover !important;
+  object-position: 0 30% !important;
+}
+
+.card\:effect > .card-footer > button.btn {
+  transition: 0.5s all;
+}
+
+.card\:effect > .card-footer > button.btn {
+  opacity: 0;
+}
+
+.card\:effect:hover > .card-footer > button.btn {
+  opacity: 1;
+}
+
+.list-group\:effect > li {
+  transition: 0.5s all;
+}
+
+.list-group\:effect > li:hover,
+.list-group\:effect > li:hover > a {
+  color: #0dcaf0 !important;
+}
+
+.card\:bg\:img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.footer\:card {
+  height: 350px;
+}
+
+/********************************************************
+ * Utilities classes
+ * Convencion, propiedad:[propiedad-secundaria]:valor
+ *******************************************************/
+.b\:r\:0 {
+  border-radius: 0 !important;
+}
+
+.bc\:red {
+  background-color: red !important;
+}
+
+.txt\:trun\:5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bg\:sheet {
+  position: relative !important;
+}
+
+.bg\:sheet::after {
+  content: '';
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg\:c\:transparent {
+  background-color: transparent !important;
+}
+
+.bg\:c\:dark {
+  background-color: #202020 !important;
+}
+
+.zi\:normal {
+  z-index: 10;
+}
+
+.zi\:tooltip {
+  z-index: 100;
+}
+
+.txt\:uppercase {
+  text-transform: uppercase;
+}

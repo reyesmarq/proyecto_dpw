@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./plugins/bootstrap/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navbar secundario -->
+    <div class="container">
+      <div class="row align-items-center pt-2 pb-2 small">
+        <!-- Contenido de izquierda -->
+        <div class="col-md-4">
+          <ul class="list-group list-group-horizontal justify-content-center">
+            <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
+              <a href="" class="text-decoration-none">Nosotros</a>
+            </li>
+            <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
+              <a href="" class="text-decoration-none">Blog</a>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="" class="text-decoration-none">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contenido de centro -->
+        <div class="col-md-4 text-center">
+          <ul class="list-group list-group-horizontal justify-content-center align-items-center">
+            <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
+              <div class="row">
+                <div class="col-sm-12">
+                  <i class="bi bi-facebook me-2"></i>
+                  <i class="bi bi-youtube me-2"></i>
+                  <i class="bi bi-twitter me-2"></i>
+                  <i class="bi bi-instagram me-2"></i>
+                  <i class="bi bi-google me-2"></i>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
+              <i class="bi bi-telephone-fill"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="">
+                <span class="badge bg-warning text-dark">Ayuda</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contenido de izquierda -->
+        <div class="col-md-4 text-center">
+          <ul class="list-group list-group-horizontal justify-content-center">
+            <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
+              <a href="" class="text-decoration-none">Iniciar sesion</a>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="" class="text-decoration-none">Registrarse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pt-5 pb-5">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/ninis-iso.png" alt="" width="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link active" aria-current="home" href="#">
+                <i class="bi bi-house-door-fill text-secondary"></i>
+              </a>
+            </li>
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link" href="#">Tiendas</a>
+            </li>
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link" href="#">Pride</a>
+            </li>
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link" href="#">Configurar PC</a>
+            </li>
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link" href="#">Asus PC</a>
+            </li>
+            <li class="nav-item ps-2 pe-2">
+              <a class="nav-link" href="#">Aorus PC</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control"
+                style="border-bottom-left-radius: 20px; border-top-left-radius: 20px;">
+              <button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container mt-4 mb-4">
+      <div class="row gap-3">
+        <!-- Categorias y banners -->
+        <div class="col-md-3 p-0">
+          <!-- Categorias -->
+          <ul class="list-group">
+            <li class="list-group-item d-flex b:r:0">
+              <i class="bi bi-mouse me-4"></i>
+              <span class="flex-grow-1">Accesorios</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-mic me-4"></i>
+              <span class="flex-grow-1">Audio</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-laptop me-4"></i>
+              <span class="flex-grow-1">Computadoras</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-upc-scan me-4"></i>
+              <span class="flex-grow-1">Componentes</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-droplet me-4"></i>
+              <span class="flex-grow-1">Consumubles</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-menu-app me-4"></i>
+              <span class="flex-grow-1">Almacenamiento</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-battery me-4"></i>
+              <span class="flex-grow-1">Electronica de consumo</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-printer me-4"></i>
+              <span class="flex-grow-1">Impresion</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-disc me-4"></i>
+              <span class="flex-grow-1">Software</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-display me-4"></i>
+              <span class="flex-grow-1">Monitores</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-phone me-4"></i>
+              <span class="flex-grow-1">Celulares</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-hdd-network me-4"></i>
+              <span class="flex-grow-1">Redes</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-app-indicator me-4"></i>
+              <span class="flex-grow-1">Apple</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+            <li class="list-group-item d-flex b:r:0">
+              <i class="bi bi-battery me-4"></i>
+              <span class="flex-grow-1">Energia</span>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+          </ul>
+        </div>
+        <!-- Contenido principal -->
+        <div class="col p-0">
+          <!-- Carousel -->
+          <div id="homeCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel:item" data-bs-interval="10000">
+                <img
+                  src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item carousel:item" data-bs-interval="2000">
+                <img
+                  src="https://images.pexels.com/photos/221011/pexels-photo-221011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item carousel:item">
+                <img
+                  src="https://images.pexels.com/photos/1181210/pexels-photo-1181210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="border-bottom pb-2 mb-4">
+            <h5>Productos destacados</h5>
+          </div>
+          <!-- Contenido de las tarjetas de productos -->
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-4 border-0 shadow-sm card:effect">
+                <img src="./images/product-1.png" alt="" class="card-img-top card:img:crop">
+                <div class="card-body">
+                  <p class="cart-text small txt:trun:5">
+                    Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM / 500GB SSD
+                    NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET GRATIS!
+                  </p>
+                  <h6 class="card-title fw-bold text-primary">$1606.13</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border-0">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-cart me-2"></i>
+                    <span>Agregar</span>
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-plus-square me-2"></i>
+                    <span>Ver mas</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card mb-4 border-0 shadow-sm card:effect">
+                <img src="./images/product-1.png" alt="" class="card-img-top card:img:crop">
+                <div class="card-body">
+                  <p class="cart-text small txt:trun:5">
+                    Procesador Intel Core i9 9900K 3.60GHz / 5.0GHz / 8 Nucleos / 16 Hilos / Socket 1151-v2 / Requiere
+                    disipador de calor / BX8068499900K / Venta hot
+                  </p>
+                  <h6 class="card-title fw-bold text-primary">$381.42</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border-0">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-cart me-2"></i>
+                    <span>Agregar</span>
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-plus-square me-2"></i>
+                    <span>Ver mas</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card mb-4 border-0 shadow-sm card:effect">
+                <img src="./images/product-1.png" alt="" class="card-img-top card:img:crop">
+                <div class="card-body">
+                  <p class="cart-text small txt:trun:5">
+                    Computadora PRIDE GAMING SHARK / Geforce RTX 2060 / Intel Core i5-10400F / 16GB RAM / 480GB SSD /
+                    SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET GRATIS!
+                  </p>
+                  <h6 class="card-title fw-bold text-primary">$1405.36</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border-0">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-cart me-2"></i>
+                    <span>Agregar</span>
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-plus-square me-2"></i>
+                    <span>Ver mas</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card mb-4 border-0 shadow-sm card:effect">
+                <img src="./images/product-1.png" alt="" class="card-img-top card:img:crop">
+                <div class="card-body">
+                  <p class="cart-text small txt:trun:5">
+                    Teclado Gamer REDRAGON RGB-SP-KUMARA-WHITE / Alambrico / Led RGB / Español / Tenkeyless / Switch
+                    Redragon Blue/ Botones Multimedia (FN+) / Venta Hot
+                  </p>
+                  <h6 class="card-title fw-bold text-primary">$999.00</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border-0">
+                  <button class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-cart me-2"></i>
+                    <span>Agregar</span>
+                  </button>
+                  <button class="btn btn-outline-secondary btn-sm">
+                    <i class="bi bi-plus-square me-2"></i>
+                    <span>Ver mas</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- Footer cards -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 p-0">
+          <div class="card text-white border-0 footer:card bg:sheet">
+            <img src="https://concepto.de/wp-content/uploads/2018/08/placa-madre4-e1534448782751.jpg"
+              class="card-img card:bg:img b:r:0" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
+              <h3 class="card-title pb-2">Configurador</h3>
+              <p class="card-text pb-2">
+                ¿Buscas la computadora ideal para ti?, Encuentra tu computadora perfecta respondiendo estas simples
+                preguntas. Tendrás lo que necesitas al instante.
+              </p>
+              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 p-0">
+          <div class="card text-white border-0 footer:card bg:sheet">
+            <img src="https://www.amd.com/system/files/amd-logo-circuit-background-1200x628.jpg"
+              class="card-img card:bg:img b:r:0" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
+              <h3 class="card-title pb-2">AMD</h3>
+              <p class="card-text pb-2">
+                Todo lo que necesitas para llevar tus partidas al siguiente nivel con Pride. Siente el orgullo Gamer y
+                llena tus partidas de poder con el equipo de Pride.
+              </p>
+              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 p-0">
+          <div class="card text-white border-0 footer:card bg:sheet">
+            <img src="https://www.residentevil.com/village/assets/images/common/share.png"
+              class="card-img card:bg:img b:r:0" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
+              <h3 class="card-title pb-2">Código Trauma Pack RE Village</h3>
+              <p class="card-text pb-2">
+                Aprovecha esta promo de HyperX
+              </p>
+              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info y data -->
+    <div class="pt-5 pb-5 bg:c:dark">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <!-- Primera lista -->
+          <div class="col-md-2">
+            <ul class="list-group list-group:effect border-0">
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Pride
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Configurar
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Nosotros
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Blog
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0 b:r:0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Segunda lista -->
+          <div class="col-md-2">
+            <ul class="list-group list-group:effect border-0">
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Pride
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Preguntas frecuentes
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Aviso legal
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0 b:r:0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Terminos y condiciones
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Logo & copyright -->
+          <div class="col-md-2 text-center text-white small">
+            <img src="./images/ninis-iso.png" alt="" width="100">
+            <p class="mb-0">Ninis © 2021</p>
+            <p>Desarrollado por <span class="fw-bold">dpw</span></p>
+          </div>
+
+          <!-- Informacion de contacto -->
+          <div class="col-md-2 text-center text-white small">
+            <div class="d-flex mb-2">
+              <div class="flex-shrink-0">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-start">
+                Calle Jose María Castilleros 3415
+                Col. Lomas de Polanco, CP. 44960
+                Guadalajara, Jalisco, México
+              </div>
+            </div>
+            <div class="d-flex mb-2">
+              <div class="flex-shrink-0">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-start">
+                (33) 15 23 28 23
+              </div>
+            </div>
+            <div class="d-flex mb-3">
+              <div class="flex-shrink-0">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-start">
+                ventas@ddtech.mx
+              </div>
+            </div>
+            <div class="d-flex">
+              <a href="" class="me-2">
+                <span class="badge bg-primary">
+                  <i class="bi bi-hand-thumbs-up-fill"></i>
+                  Me gusta
+                </span>
+              </a>
+              <a href="">
+                <span class="badge bg-primary">Compartir</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="col-md-2 text-center text-white">
+            <span class="h4"><i class="bi bi-facebook me-4"></i></span>
+            <span class="h4"><i class="bi bi-youtube me-4"></i></span>
+            <span class="h4"><i class="bi bi-twitter me-4"></i></span>
+            <span class="h4"><i class="bi bi-instagram me-4"></i></span>
+            <span class="h4"><i class="bi bi-google me-4"></i></span>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Formas de pago -->
+  <aside>
+    <div class="bg-dark">
+      <div class="container py-3">
+        <div class="row d-flex align-items-center justify-content-end">
+          <div class="col-lg-1 d-flex justify-content-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Banco-agricola-sv.png" alt="" width="80">
+          </div>
+          <div class="col-lg-1 d-flex justify-content-center">
+            <img src="https://logos-marcas.com/wp-content/uploads/2020/04/Visa-Emblema.png" alt="" width="80">
+          </div>
+          <div class="col-lg-1 d-flex justify-content-center">
+            <img src="https://1000marcas.net/wp-content/uploads/2019/12/MasterCard-Logo.png" alt="" width="80">
+          </div>
+          <div class="col-lg-1 d-flex justify-content-center">
+            <img src="https://logos-marcas.com/wp-content/uploads/2020/08/Bitcoin-Logo.png" alt="" width="80">
+          </div>
+          <div class="col-lg-1 d-flex justify-content-center">
+            <img src="https://logos-marcas.com/wp-content/uploads/2020/04/PayPal-Logo.png" alt="" width="80">
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="./plugins/bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
