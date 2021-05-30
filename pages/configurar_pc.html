@@ -19,54 +19,548 @@
       <div class="row">
         <!-- Pasos -->
         <div class="col-md-8">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion" id="configurarPc">
+
+            <!-- Paso 1 | Marca procesador -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Accordion Item #1
+              <h2 class="accordion-header" id="label_marcaProcesador">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#marcaProcesador" aria-expanded="true" aria-controls="marcaProcesador">
+                  Marca del procesador
                 </button>
               </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                  <code>.accordion-flush</code> class. This is the first item's accordion body.
+              <div id="marcaProcesador" class="accordion-collapse collapse show" aria-labelledby="label_marcaProcesador"
+                data-bs-parent="#configurarPc">
+                <div class="accordion-body">
+                  <div class="row d-flex align-items-center">
+
+                    <div class="col-md-4 cursor:pointer">
+                      <div class="card mb-4 border-0">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/03/AMD-Logo.png" alt=""
+                          class="card-img-top card:img:crop" data-marca-procesador="amd">
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 cursor:pointer">
+                      <div class="card mb-4 border-0">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Intel_logo_%282006-2020%29.svg/1005px-Intel_logo_%282006-2020%29.svg.png"
+                          alt="" class="card-img-top card:img:crop" data-marca-procesador="intel">
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
+
+            <!-- Paso 2 | Procesador -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
+              <h2 class="accordion-header" id="label_procesador">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Accordion Item #2
+                  data-bs-target="#procesador" aria-expanded="false" aria-controls="procesador">
+                  Procesador
                 </button>
               </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                  <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
-                  being filled with some actual content.
+              <div id="procesador" class="accordion-collapse collapse" aria-labelledby="label_procesador"
+                data-bs-parent="#configurarPc">
+                <div class="row">
+
+                  <div class="col-md-4">
+                    <div class="card mb-4 border-0">
+                      <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                      <div class="card-body">
+                        <p class="cart-text small txt:trun:5">
+                          Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                          500GB SSD
+                          NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                          GRATIS!
+                        </p>
+                        <h6 class="card-title fw-bold text-primary mb-3">$1606.13</h6>
+                        <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                          <button class="btn btn-outline-secondary btn-sm" data-procesador="1606.13">
+                            <i class="bi bi-cart me-2 pe-none"></i>
+                            <span class="pe-none">Agregar</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
+
+            <!-- Paso 3 | Disipador -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
+              <h2 class="accordion-header" id="label_disipador">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Accordion Item #3
+                  data-bs-target="#disipador" aria-expanded="false" aria-controls="disipador">
+                  Disipador de calor
                 </button>
               </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                  <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                  happening here in terms of content, but just filling up the space to make it look, at least at first
-                  glance, a bit more representative of how this would look in a real-world application.
+              <div id="disipador" class="accordion-collapse collapse" aria-labelledby="label_disipador"
+                data-bs-parent="#configurarPc">
+                <div class="accordion-body">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$369.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-disipador="369.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 4 | Tarjeta madre -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="label_tarjetaMadre">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#tarjetaMadre" aria-expanded="false" aria-controls="tarjetaMadre">
+                  Tarjeta Madre
+                </button>
+              </h2>
+              <div id="tarjetaMadre" class="accordion-collapse collapse" aria-labelledby="label_tarjetaMadre"
+                data-bs-parent="#configurarPc">
+                <div class="accordion-body">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$1399.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-tarjeta-madre="1399.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 5 | Memoria Ram -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="label_memoriaRam">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#memoriaRam" aria-expanded="false" aria-controls="memoriaRam">
+                  Memoria Ram
+                </button>
+              </h2>
+              <div id="memoriaRam" class="accordion-collapse collapse" aria-labelledby="label_memoriaRam"
+                data-bs-parent="#configurarPc">
+                <div class="accordion-body">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$549.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-memoria-ram="549.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 6 | Memoria Ram Adicional -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="label_memoriaRamAdicional">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#memoriaRamAdicional" aria-expanded="false" aria-controls="memoriaRamAdicional">
+                  Memoria Ram Adicional
+                </button>
+              </h2>
+              <div id="memoriaRamAdicional" class="accordion-collapse collapse"
+                aria-labelledby="label_memoriaRamAdicional" data-bs-parent="#configurarPc">
+                <div class="accordion-body">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Omitir este paso
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$0</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-memoria-ram-adicional="0">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$549.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-memoria-ram-adicional="549.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 7 | Almacenamiento -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="label_almacenamiento">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#almacenamiento" aria-expanded="false" aria-controls="almacenamiento">
+                  Almacenamiento
+                </button>
+              </h2>
+              <div id="almacenamiento" class="accordion-collapse collapse" aria-labelledby="label_almacenamiento"
+                data-bs-parent="#configurarPc">
+                <div class="accordion-body">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$478</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-almacenamiento="478.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$499.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-almacenamiento="499.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 8 | Almacenamiento adicional -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="label_almacenamientoAdicional">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#almacenamientoAdicional" aria-expanded="false" aria-controls="almacenamientoAdicional">
+                  Almacenamiento Adicional
+                </button>
+              </h2>
+              <div id="almacenamientoAdicional" class="accordion-collapse collapse" aria-labelledby="label_almacenamientoAdicional"
+                data-bs-parent="#configurarPc">
+                <div class="accordion-body">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Omitir este paso
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$0.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-almacenamiento-adicional="0.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$479.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-almacenamiento-adicional="479.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 9 | Tarjeta grafica -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="label_tarjetaGrafica">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#tarjetaGrafica" aria-expanded="false" aria-controls="tarjetaGrafica">
+                  Tarjeta grafica
+                </button>
+              </h2>
+              <div id="tarjetaGrafica" class="accordion-collapse collapse" aria-labelledby="label_tarjetaGrafica"
+                data-bs-parent="#configurarPc">
+                <div class="accordion-body">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Omitir este paso
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$0.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-tarjeta-grafica="0.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$479.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-tarjeta-grafica="479.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 9 | Gabinete -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="label_gabinete">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#gabinete" aria-expanded="false" aria-controls="gabinete">
+                  Gabinete
+                </button>
+              </h2>
+              <div id="gabinete" class="accordion-collapse collapse" aria-labelledby="label_gabinete"
+                data-bs-parent="#configurarPc">
+                <div class="accordion-body">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$399.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-gabinete="399.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$579.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-gabinete="579.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 9 | Gabinete -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="label_fuente">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#fuente" aria-expanded="false" aria-controls="fuente">
+                  Fuente de poder
+                </button>
+              </h2>
+              <div id="fuente" class="accordion-collapse collapse" aria-labelledby="label_fuente"
+                data-bs-parent="#configurarPc">
+                <div class="accordion-body">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$259.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-fuente="259.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 border-0 .p:e:pointer">
+                        <img src="../images/product-1.png" alt="" class="card-img-top card:img:crop">
+                        <div class="card-body">
+                          <p class="cart-text small txt:trun:5">
+                            Computadora PRIDE GAMING DOLPHIN / Geforce RTX 3060 / Intel Core i5-10400F / 16GB RAM /
+                            500GB SSD
+                            NVMe / Enfriamiento Liquido 120mm / SOLO 1 PIEZA POR CLIENTE / Venta hot / ¡INCLUYE HEADSET
+                            GRATIS!
+                          </p>
+                          <h6 class="card-title fw-bold text-primary mb-3">$319.00</h6>
+                          <div class="card-footer d-flex justify-content-between bg-white border-0 p-0">
+                            <button class="btn btn-outline-secondary btn-sm" data-fuente="319.00">
+                              <i class="bi bi-cart me-2 pe-none"></i>
+                              <span class="pe-none">Agregar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <!-- Contenido secundario -->
         <div class="col-md-4">
           <div class="card mb-3">
@@ -104,7 +598,7 @@
   </main>
 
   <script src="../plugins/bootstrap/bootstrap.min.js"></script>
-  <!-- <script src="../js/configurar_pc.js"></script> -->
+  <script src="../js/configurar_pc.js"></script>
 </body>
 
 </html>
