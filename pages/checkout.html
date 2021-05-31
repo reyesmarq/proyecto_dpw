@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+  <main class="my-5">
+    <div class="container">
+      <table class="table border">
+        <thead>
+          <tr class="text-center small">
+            <th scope="col" class="border">Imagen</th>
+            <th scope="col" class="border">Descripcion del producto</th>
+            <th scope="col" class="border">cantidad</th>
+            <th scope="col" class="border">Precio unitario</th>
+            <th scope="col" class="border">Precio Total</th>
+            <th scope="col" class="border">Eliminar</th>
+          </tr>
+        </thead>
+        <tbody id="checkoutBody">
+          <!-- <tr class="align-middle">
+            <th scope="row" class="p-4">
+              <img src="../images/product-1.png" alt="" width="100">
+            </th>
+            <td class="p-4">NO BREAK Y REGULADOR SMARTBITT SBNB900LCD 750VA / 6 CONTACTOS / SUPRESOR Y RESPALDO</td>
+            <td class="text-center p-4">
+              <input type="number" class="form-control" style="width: 100px" value="1" min="1" max="10">
+            </td>
+            <td class="text-center p-4">$1,599.00</td>
+            <td class="text-center p-4">$1,599.00</td>
+            <td class="text-center p-4">
+              <i class="bi bi-trash"></i>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="../plugins/bootstrap/bootstrap.min.js"></script>
+
+  <script>
+    let TBody = document.getElementById('checkoutBody')
+    let products = [
+      {
+        id: 1,
+        imageUrl: '../images/product-1.png',
+        description: 'NO BREAK Y REGULADOR SMARTBITT SBNB900LCD 750VA / 6 CONTACTOS / SUPRESOR Y RESPALDO',
+        quantity: 1,
+        price: 1599.00
+      },
+      {
+        id: 2,
+        imageUrl: '../images/product-1.png',
+        description: 'NO BREAK Y REGULADOR SMARTBITT SBNB900LCD 750VA / 6 CONTACTOS / SUPRESOR Y RESPALDO',
+        quantity: 1,
+        price: 1599.00
+      }
+    ]
+
+    let htmlContent = products.map(product => (`
+      <tr class="align-middle">
+        <th scope="row" class="p-4">
+          <img src="${product.imageUrl}" alt="" width="100">
+        </th>
+        <td class="p-4">${product.description}</td>
+        <td class="text-center p-4">
+          <input type="number" class="form-control" style="width: 100px" value="${product.quantity}" min="1" max="10">
+        </td>
+        <td class="text-center p-4">$${product.price}</td>
+        <td class="text-center p-4">$${product.price * product.quantity}</td>
+        <td class="text-center p-4">
+          <i class="bi bi-trash"></i>
+        </td>
+      </tr>
+    `))
+
+    TBody.innerHTML = htmlContent
+  </script>
+</body>
+
+</html>
