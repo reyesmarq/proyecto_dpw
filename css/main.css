@@ -49,6 +49,12 @@
   height: 350px;
 }
 
+/* Remueve el outline del componente accordion */
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0,0,0,.125);
+}
+
 /********************************************************
  * Utilities classes
  * Convencion, propiedad:[propiedad-secundaria]:valor
@@ -101,4 +107,12 @@
 
 .txt\:uppercase {
   text-transform: uppercase;
+}
+
+.txt\:lowercase {
+  text-transform: lowercase;
+}
+
+.cursor\:pointer:hover {
+  cursor: pointer;
 }

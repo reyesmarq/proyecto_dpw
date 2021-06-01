@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="./plugins/bootstrap/icons/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
+
   <header>
     <!-- Navbar secundario -->
     <div class="container">
@@ -20,10 +21,10 @@
         <div class="col-md-4">
           <ul class="list-group list-group-horizontal justify-content-center">
             <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
-              <a href="./pages/nosotros.html" class="text-decoration-none">Nosotros</a>
+              <a href="./nosotros.html" class="text-decoration-none">Nosotros</a>
             </li>
             <li class="list-group-item border-0">
-              <a href="./pages/contacto.html" class="text-decoration-none">Contacto</a>
+              <a href="./contacto.html" class="text-decoration-none">Contacto</a>
             </li>
           </ul>
         </div>
@@ -53,7 +54,7 @@
         </div>
         <!-- Contenido de derecha -->
         <div class="col-md-4 text-center">
-          <a href="./pages/iniciar_sesion.html" class="text-decoration-none">
+          <a href="./iniciar_sesion.html" class="text-decoration-none">
             <ul class="list-group list-group-horizontal justify-content-center">
               <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
                 Iniciar sesion
@@ -69,8 +70,8 @@
     <!-- Navbar principal -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light pt-5 pb-5">
       <div class="container">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./images/ninis-iso.png" alt="" width="100">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/ninis-iso.png" alt="" width="100">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
           aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +80,7 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item border-end ps-2 pe-2">
-              <a class="nav-link active" aria-current="home" href="./index.html">
+              <a class="nav-link active" aria-current="home" href="../index.html">
                 <i class="bi bi-house-door-fill text-secondary"></i>
               </a>
             </li>
@@ -87,13 +88,13 @@
               <a class="nav-link" href="#">Productos</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
-              <a class="nav-link" href="./pages/contacto.html">Tiendas</a>
+              <a class="nav-link" href="./contacto.html">Tiendas</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
               <a class="nav-link" href="#">Pride</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
-              <a class="nav-link" href="./pages/configurar_pc.html">Configurar PC</a>
+              <a class="nav-link" href="./configurar_pc.html">Configurar PC</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
               <a class="nav-link" href="#">Asus PC</a>
@@ -102,14 +103,14 @@
               <a class="nav-link" href="#">Aorus PC</a>
             </li>
           </ul>
-          <form class="d-flex ">
+          <form class="d-flex">
             <div class="input-group">
               <input type="text" class="form-control"
                 style="border-bottom-left-radius: 20px; border-top-left-radius: 20px;">
               <button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
             </div>
           </form>
-          <a class="navbar-text cursor:pointer text-decoration-none ms-3" href="./pages/checkout.html">
+          <a class="navbar-text cursor:pointer text-decoration-none ms-3" href="./checkout.html">
             <span class="pe-none">0<i class="bi bi-cart pe-none"></i> | Comprar</span>
           </a>
         </div>
@@ -117,176 +118,160 @@
     </nav>
   </header>
 
-  <main>
-    <div class="container mt-4 mb-4">
-      <div class="row gap-3">
-        <!-- Categorias y banners -->
-        <div class="col-md-3 p-0">
-          <!-- Categorias -->
-          <ul class="list-group">
-            <li class="list-group-item d-flex b:r:0">
-              <i class="bi bi-mouse me-4"></i>
-              <span class="flex-grow-1">Accesorios</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-mic me-4"></i>
-              <span class="flex-grow-1">Audio</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-laptop me-4"></i>
-              <span class="flex-grow-1">Computadoras</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-upc-scan me-4"></i>
-              <span class="flex-grow-1">Componentes</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-droplet me-4"></i>
-              <span class="flex-grow-1">Consumubles</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-menu-app me-4"></i>
-              <span class="flex-grow-1">Almacenamiento</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center">
-              <i class="bi bi-battery me-4"></i>
-              <span class="flex-grow-1">Electronica de consumo</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-printer me-4"></i>
-              <span class="flex-grow-1">Impresion</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-disc me-4"></i>
-              <span class="flex-grow-1">Software</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-display me-4"></i>
-              <span class="flex-grow-1">Monitores</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-phone me-4"></i>
-              <span class="flex-grow-1">Celulares</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-hdd-network me-4"></i>
-              <span class="flex-grow-1">Redes</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-app-indicator me-4"></i>
-              <span class="flex-grow-1">Apple</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-            <li class="list-group-item d-flex b:r:0">
-              <i class="bi bi-battery me-4"></i>
-              <span class="flex-grow-1">Energia</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
-          </ul>
+  <main class="my-5">
+    <div class="container">
+      <!-- Botones -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <button href="" class="btn btn-primary btn-sm px-4">
+            <i class="bi bi-facebook pe-none pe-1"></i>
+            Compartir en facebook
+          </button>
+          <button href="" class="btn btn-secondary btn-sm px-4">
+            <i class="bi bi-share-fill pe-none pe-1"></i>
+            Compartir carrito de compras
+          </button>
         </div>
-        <!-- Contenido principal -->
-        <div class="col p-0">
-          <!-- Carousel -->
-          <div id="homeCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active carousel:item" data-bs-interval="10000">
-                <img
-                  src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  class="d-block w-100" alt="...">
+        <div class="col-md-6 text-end">
+          <button class="btn btn-danger btn-sm px-4" id="btnBorrarCarrito">
+            <i class="bi bi-trash pe-none pe-1"></i>
+            Vaciar carrito de compras
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabla de productos -->
+      <table class="table border mb-4">
+        <thead>
+          <tr class="text-center small">
+            <th scope="col" class="border">Imagen</th>
+            <th scope="col" class="border">Descripcion del producto</th>
+            <th scope="col" class="border">cantidad</th>
+            <th scope="col" class="border">Precio unitario</th>
+            <th scope="col" class="border">Precio Total</th>
+            <th scope="col" class="border">Eliminar</th>
+          </tr>
+        </thead>
+        <tbody id="checkoutBody">
+          <!-- <tr class="align-middle">
+            <th scope="row" class="p-4">
+              <img src="../images/product-1.png" alt="" width="100">
+            </th>
+            <td class="p-4">NO BREAK Y REGULADOR SMARTBITT SBNB900LCD 750VA / 6 CONTACTOS / SUPRESOR Y RESPALDO</td>
+            <td class="text-center p-4">
+              <input type="number" class="form-control" style="width: 100px" value="1" min="1" max="10">
+            </td>
+            <td class="text-center p-4">$1,599.00</td>
+            <td class="text-center p-4">$1,599.00</td>
+            <td class="text-center p-4">
+              <i class="bi bi-trash"></i>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+
+      <!-- Cartas resumen -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="card-header py-3 fw-bold txt:uppercase">
+              Tipo de entrega
+              <h6 class="text-muted small txt:lowercase mt-1">
+                Todos los envíos se realizan en días hábiles.
+              </h6>
+            </div>
+            <div class="card-body pb-4">
+              <label for="factura" class="form-label small">Elija una opcion</label>
+              <select class="form-select" id="factura">
+                <option value="ticket" selected>Ticket</option>
+                <option value="factura">Factura</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="card-header py-3 fw-bold txt:uppercase">
+              Factura
+              <h6 class="text-muted small txt:lowercase mt-1">
+                Selecciona Ticket, si solo necesita su comprobante en caso de garantía. Selecciona Factura, si necesita
+                declarar impuestos ante hacienda.
+              </h6>
+            </div>
+            <div class="card-body pb-4">
+              <div class="form-control border-0">
+                <label for="entrega" class="form-label small">Tipo de entrega</label>
+                <select class="form-select" id="entrega">
+                  <option value="domicilio" selected>A domicilio</option>
+                  <option value="recoger">Recoger en una sucursal</option>
+                </select>
               </div>
-              <div class="carousel-item carousel:item" data-bs-interval="2000">
-                <img
-                  src="https://images.pexels.com/photos/221011/pexels-photo-221011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item carousel:item">
-                <img
-                  src="https://images.pexels.com/photos/1181210/pexels-photo-1181210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  class="d-block w-100" alt="...">
+              <div class="form-control border-0">
+                <label for="metodo-pago" class="form-label small">Metodo de pago</label>
+                <select class="form-select" id="metodo-pago">
+                  <option value="sucursal" selected>Pagar en sucursal</option>
+                  <option value="linea">Pagar en linea</option>
+                </select>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <label for="factura" class="form-label small">Si tienes un cupón ingrésalo aquí:</label>
+              <form class="d-flex">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Cupon" required>
+                  <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+                </div>
+              </form>
+            </div>
           </div>
 
-          <div class="border-bottom pb-2 mb-4">
-            <h5>Productos destacados</h5>
-          </div>
-          <!-- Contenido de las tarjetas de productos -->
-          <div class="row" id="productosContainer">
-            <!-- Secion don de se insertaran los productos a traves de javascript -->
+          <div class="card mb-3">
+            <div class="card-header fw-bold txt:uppercase">
+              <table class="table table-borderless text-center">
+                <tbody>
+                  <tr>
+                    <td>
+                      <h5>Subtotal</h5>
+                    </td>
+                    <td id="subtotal">$1,999.00</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Envio</h5>
+                    </td>
+                    <td id="envio">$0.00</td>
+                  </tr>
+                  <tr>
+                    <td class="text-primary">
+                      <h5>Total<br> (iva incluido)</h5>
+                    </td>
+                    <td id="total" class="text-primary">$0.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-body pb-4">
+              <div class="form-check d-flex justify-content-center">
+                <input class="form-check-input me-2" type="checkbox" value="" id="terminos">
+                <label class="form-check-label" for="terminos">
+                  Acepto terminos y condiciones
+                </label>
+              </div>
+            </div>
+            <div class="card-footer p-3 text-center bg-white">
+              <button class="btn btn-secondary btn-sm">Continuar con el pago</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-
-  <aside>
-    <!-- Footer cards -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 p-0">
-          <div class="card text-white border-0 footer:card bg:sheet">
-            <img src="https://concepto.de/wp-content/uploads/2018/08/placa-madre4-e1534448782751.jpg"
-              class="card-img card:bg:img b:r:0" alt="...">
-            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
-              <h3 class="card-title pb-2">Configurador</h3>
-              <p class="card-text pb-2">
-                ¿Buscas la computadora ideal para ti?, Encuentra tu computadora perfecta respondiendo estas simples
-                preguntas. Tendrás lo que necesitas al instante.
-              </p>
-              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 p-0">
-          <div class="card text-white border-0 footer:card bg:sheet">
-            <img src="https://www.amd.com/system/files/amd-logo-circuit-background-1200x628.jpg"
-              class="card-img card:bg:img b:r:0" alt="...">
-            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
-              <h3 class="card-title pb-2">AMD</h3>
-              <p class="card-text pb-2">
-                Todo lo que necesitas para llevar tus partidas al siguiente nivel con Pride. Siente el orgullo Gamer y
-                llena tus partidas de poder con el equipo de Pride.
-              </p>
-              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 p-0">
-          <div class="card text-white border-0 footer:card bg:sheet">
-            <img src="https://www.residentevil.com/village/assets/images/common/share.png"
-              class="card-img card:bg:img b:r:0" alt="...">
-            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
-              <h3 class="card-title pb-2">Código Trauma Pack RE Village</h3>
-              <p class="card-text pb-2">
-                Aprovecha esta promo de HyperX
-              </p>
-              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </aside>
 
   <footer>
     <!-- Info y data -->
@@ -453,80 +438,8 @@
     </div>
   </aside>
 
-  <script src="./plugins/bootstrap/bootstrap.min.js"></script>
-  <script>
-    let productosContainer = document.getElementById('productosContainer');
-    let productos = [
-      {
-        id: 1,
-        imageUrl: './images/1.1.png',
-        description: 'Mouse Inalambrico Vorago MO-207 Rosa',
-        price: 4.95
-      },
-      {
-        id: 2,
-        imageUrl: './images/2.1.png',
-        description: 'Silla Gamer Deportiva Vertagear SL1000 Black/Green VG-SL1000-GR',
-        price: 294.95
-      },
-      {
-        id: 3,
-        imageUrl: './images/3.1.png',
-        description: 'Teclado Gamer REDRAGON K589RGB-SP SHRAPNEL / Alambrico / RGB / Mecánico / Outemu Blue LP / Español / K589RGB-SP-SHRAPNEL',
-        price: 78.45
-      },
-      {
-        id: 4,
-        imageUrl: './images/4.1.png',
-        description: 'Mochila Gamer para laptop / Trust Gaming Hunter GXT1250C / 15.6" / Camuflaje / Resistente al agua / Antirasguños / Antichoques / 23868',
-        price: 49.95
-      },
-      {
-        id: 5,
-        imageUrl: './images/5.1.png',
-        description: 'Lentes Gamer Xzeal XZAGG50R XZ500 Rojos / Anti Blue Light / Termoplástico TR90 / Estuche y Microfibra incluidos',
-        price: 18.45
-      },
-      {
-        id: 6,
-        imageUrl: './images/6.1.png',
-        description: 'Camara Web HD Logitech C505 / 720p-30FPS / 960-001363 / Promo Logi',
-        price: 18.45
-      },
-    ]
-
-
-    document.getElementById('productosContainer')
-      .addEventListener('click', (e) => {
-        console.log('testing')
-      })
-
-    let productosHtml = productos.map(producto => (`
-      <div class="col-md-3">
-        <div class="card mb-4 border-0 shadow-sm card:effect">
-          <img src="${producto.imageUrl}" alt="" class="card-img-top card:img:crop">
-          <div class="card-body">
-            <p class="cart-text small txt:trun:5">
-              ${producto.description}
-            </p>
-            <h6 class="card-title fw-bold text-primary">$${producto.price}</h6>
-          </div>
-          <div class="card-footer d-flex justify-content-between bg-white border-0">
-            <button class="btn btn-outline-secondary btn-sm">
-              <i class="bi bi-cart me-2"></i>
-              <span>Agregar</span>
-            </button>
-            <button class="btn btn-outline-secondary btn-sm">
-              <i class="bi bi-plus-square me-2 pe-none"></i>
-              <span class="pe-none">Ver mas</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    `)).join(',').replace(/\,/g, '').toString()
-
-    productosContainer.innerHTML = productosHtml
-  </script>
+  <script src="../plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="../js/checkout.js"></script>
 </body>
 
 </html>

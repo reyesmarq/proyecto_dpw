@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="./plugins/bootstrap/icons/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -20,10 +20,10 @@
         <div class="col-md-4">
           <ul class="list-group list-group-horizontal justify-content-center">
             <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
-              <a href="./pages/nosotros.html" class="text-decoration-none">Nosotros</a>
+              <a href="./nosotros.html" class="text-decoration-none">Nosotros</a>
             </li>
             <li class="list-group-item border-0">
-              <a href="./pages/contacto.html" class="text-decoration-none">Contacto</a>
+              <a href="./contacto.html" class="text-decoration-none">Contacto</a>
             </li>
           </ul>
         </div>
@@ -53,7 +53,7 @@
         </div>
         <!-- Contenido de derecha -->
         <div class="col-md-4 text-center">
-          <a href="./pages/iniciar_sesion.html" class="text-decoration-none">
+          <a href="./iniciar_sesion.html" class="text-decoration-none">
             <ul class="list-group list-group-horizontal justify-content-center">
               <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
                 Iniciar sesion
@@ -69,8 +69,8 @@
     <!-- Navbar principal -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light pt-5 pb-5">
       <div class="container">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./images/ninis-iso.png" alt="" width="100">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/ninis-iso.png" alt="" width="100">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
           aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +79,7 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item border-end ps-2 pe-2">
-              <a class="nav-link active" aria-current="home" href="./index.html">
+              <a class="nav-link active" aria-current="home" href="../index.html">
                 <i class="bi bi-house-door-fill text-secondary"></i>
               </a>
             </li>
@@ -87,13 +87,13 @@
               <a class="nav-link" href="#">Productos</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
-              <a class="nav-link" href="./pages/contacto.html">Tiendas</a>
+              <a class="nav-link" href="./contacto.html">Tiendas</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
               <a class="nav-link" href="#">Pride</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
-              <a class="nav-link" href="./pages/configurar_pc.html">Configurar PC</a>
+              <a class="nav-link" href="./configurar_pc.html">Configurar PC</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
               <a class="nav-link" href="#">Asus PC</a>
@@ -102,14 +102,14 @@
               <a class="nav-link" href="#">Aorus PC</a>
             </li>
           </ul>
-          <form class="d-flex ">
+          <form class="d-flex">
             <div class="input-group">
               <input type="text" class="form-control"
                 style="border-bottom-left-radius: 20px; border-top-left-radius: 20px;">
               <button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
             </div>
           </form>
-          <a class="navbar-text cursor:pointer text-decoration-none ms-3" href="./pages/checkout.html">
+          <a class="navbar-text cursor:pointer text-decoration-none ms-3" href="./checkout.html">
             <span class="pe-none">0<i class="bi bi-cart pe-none"></i> | Comprar</span>
           </a>
         </div>
@@ -199,94 +199,101 @@
         <!-- Contenido principal -->
         <div class="col p-0">
           <!-- Carousel -->
-          <div id="homeCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+          <div id="homeCarousel" class="carousel mb-4" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active carousel:item" data-bs-interval="10000">
+              <div class="carousel-item active carousel:item">
                 <img
-                  src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item carousel:item" data-bs-interval="2000">
-                <img
-                  src="https://images.pexels.com/photos/221011/pexels-photo-221011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item carousel:item">
-                <img
-                  src="https://images.pexels.com/photos/1181210/pexels-photo-1181210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                   class="d-block w-100" alt="...">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+          <!-- Texto -->
+          <div class="d-flex flex-column text-center">
+            <!-- Historia -->
+            <section class="mb-3">
+              <h3>Ninis</h3>
+              <p class="text-muted text-start">
+                DD Tech surge para atender las crecientes necesidades mostradas por el mercado de consumidores de
+                electronicos y computo con la idea de satisfacerlas de una forma eficaz, ágil y con precios accesibles,
+                además somos uno de los más grandes vendedores en la plataforma Mercado Libre (distinguidos con el
+                nombramiento de mercadolider platinum, categoría que se le otorga sólo a vendedores miembros de la
+                comunidad que gozan de una reputación impecable).
+              </p>
+              <p class="text-muted text-start">
+                Actualmente contamos con una oficina central y una sucursal ubicada en la zona centro de la ciudad de
+                Guadalajara, Jalisco, desde sus inicios nos propusimos ser una empresa que crease una conexión más
+                directa
+                entre sus clientes y personal, que los guiará a realizar una buena compra.
+              </p>
+              <p class="text-muted text-start">
+                Más de 7 años brindando atención, servicio, calidad e innovación.
+              </p>
+            </section>
 
-          <div class="border-bottom pb-2 mb-4">
-            <h5>Productos destacados</h5>
-          </div>
-          <!-- Contenido de las tarjetas de productos -->
-          <div class="row" id="productosContainer">
-            <!-- Secion don de se insertaran los productos a traves de javascript -->
+            <!-- Objectivo -->
+            <section class="mb-3">
+              <h5>Objetivo General</h5>
+              <p class="text-muted text-start">
+                Nuestro objetivo general es satisfacer de manera eficaz las necesidades del mercado, buscando la mejora
+                continua en los servicios de la empresa.
+              </p>
+            </section>
+
+            <!-- Mision y vision -->
+            <section class="mb-3">
+              <div class="row">
+                <div class="col">
+                  <h5>Mision</h5>
+                  <p class="text-muted text-start">
+                    Ser el aliado estratégico de nuestros clientes, guiándolos a una compra inteligente.
+                  </p>
+                </div>
+                <div class="col">
+                  <h5>Vision</h5>
+                  <p class="text-muted text-start">
+                    Ser el mejor proveedor de tecnología y servicio online para un mercado en constante cambio.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Valores -->
+            <section class="mb-3">
+              <h5>Valores</h5>
+              <ol class="text-muted text-start">
+                <li class="mb-2">
+                  <strong>Integridad</strong>: Estamos expresamente comprometidos a que todas nuestras transacciones de
+                  negocios se realicen con integridad, honestidad y siguiendo normas éticas de conducta.
+                </li>
+                <li class="mb-2">
+                  <strong>Receptividad</strong>: Como una organización, reconocemos la importancia de ser receptivos a
+                  las necesidades de todos aquellos con los cuales hacemos negocios, independiente de su ubicación.
+                </li>
+                <li class="mb-2">
+                  <strong>Respeto</strong>: A las ideas y diferencias individuales y culturales.
+                </li>
+                <li class="mb-2">
+                  <strong>Trabajo en equipo</strong>: DD Tech considera de gran valor el trabajo en equipo entre sus
+                  departamentos. Este espíritu debe prevalecer en toda actividad, incluyendo las relaciones con los
+                  clientes.
+                </li>
+                <li class="mb-2">
+                  <strong>Servicio al cliente</strong>: DD Tech considera de vital importancia ofrecer excelencia en el
+                  servicio, proporcionado a nuestros clientes “lo que el cliente necesita, en donde lo necesita y cuando
+                  lo necesita”.
+                </li>
+                <li class="mb-2">
+                  <strong>Responsabilidad</strong>: Estamos comprometidos en ser un socio de negocios que siempre cumpla
+                  con lo prometido.
+                </li>
+              </ol>
+            </section>
           </div>
         </div>
       </div>
     </div>
   </main>
-
-  <aside>
-    <!-- Footer cards -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 p-0">
-          <div class="card text-white border-0 footer:card bg:sheet">
-            <img src="https://concepto.de/wp-content/uploads/2018/08/placa-madre4-e1534448782751.jpg"
-              class="card-img card:bg:img b:r:0" alt="...">
-            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
-              <h3 class="card-title pb-2">Configurador</h3>
-              <p class="card-text pb-2">
-                ¿Buscas la computadora ideal para ti?, Encuentra tu computadora perfecta respondiendo estas simples
-                preguntas. Tendrás lo que necesitas al instante.
-              </p>
-              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 p-0">
-          <div class="card text-white border-0 footer:card bg:sheet">
-            <img src="https://www.amd.com/system/files/amd-logo-circuit-background-1200x628.jpg"
-              class="card-img card:bg:img b:r:0" alt="...">
-            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
-              <h3 class="card-title pb-2">AMD</h3>
-              <p class="card-text pb-2">
-                Todo lo que necesitas para llevar tus partidas al siguiente nivel con Pride. Siente el orgullo Gamer y
-                llena tus partidas de poder con el equipo de Pride.
-              </p>
-              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 p-0">
-          <div class="card text-white border-0 footer:card bg:sheet">
-            <img src="https://www.residentevil.com/village/assets/images/common/share.png"
-              class="card-img card:bg:img b:r:0" alt="...">
-            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
-              <h3 class="card-title pb-2">Código Trauma Pack RE Village</h3>
-              <p class="card-text pb-2">
-                Aprovecha esta promo de HyperX
-              </p>
-              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </aside>
 
   <footer>
     <!-- Info y data -->
@@ -434,7 +441,7 @@
       <div class="container py-3">
         <div class="row d-flex align-items-center justify-content-end">
           <div class="col-lg-1 d-flex justify-content-center">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Banco-agricola-sv.png" alt="" width="80">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Banco-" alt="" width="80">
           </div>
           <div class="col-lg-1 d-flex justify-content-center">
             <img src="https://logos-marcas.com/wp-content/uploads/2020/04/Visa-Emblema.png" alt="" width="80">
@@ -453,80 +460,7 @@
     </div>
   </aside>
 
-  <script src="./plugins/bootstrap/bootstrap.min.js"></script>
-  <script>
-    let productosContainer = document.getElementById('productosContainer');
-    let productos = [
-      {
-        id: 1,
-        imageUrl: './images/1.1.png',
-        description: 'Mouse Inalambrico Vorago MO-207 Rosa',
-        price: 4.95
-      },
-      {
-        id: 2,
-        imageUrl: './images/2.1.png',
-        description: 'Silla Gamer Deportiva Vertagear SL1000 Black/Green VG-SL1000-GR',
-        price: 294.95
-      },
-      {
-        id: 3,
-        imageUrl: './images/3.1.png',
-        description: 'Teclado Gamer REDRAGON K589RGB-SP SHRAPNEL / Alambrico / RGB / Mecánico / Outemu Blue LP / Español / K589RGB-SP-SHRAPNEL',
-        price: 78.45
-      },
-      {
-        id: 4,
-        imageUrl: './images/4.1.png',
-        description: 'Mochila Gamer para laptop / Trust Gaming Hunter GXT1250C / 15.6" / Camuflaje / Resistente al agua / Antirasguños / Antichoques / 23868',
-        price: 49.95
-      },
-      {
-        id: 5,
-        imageUrl: './images/5.1.png',
-        description: 'Lentes Gamer Xzeal XZAGG50R XZ500 Rojos / Anti Blue Light / Termoplástico TR90 / Estuche y Microfibra incluidos',
-        price: 18.45
-      },
-      {
-        id: 6,
-        imageUrl: './images/6.1.png',
-        description: 'Camara Web HD Logitech C505 / 720p-30FPS / 960-001363 / Promo Logi',
-        price: 18.45
-      },
-    ]
-
-
-    document.getElementById('productosContainer')
-      .addEventListener('click', (e) => {
-        console.log('testing')
-      })
-
-    let productosHtml = productos.map(producto => (`
-      <div class="col-md-3">
-        <div class="card mb-4 border-0 shadow-sm card:effect">
-          <img src="${producto.imageUrl}" alt="" class="card-img-top card:img:crop">
-          <div class="card-body">
-            <p class="cart-text small txt:trun:5">
-              ${producto.description}
-            </p>
-            <h6 class="card-title fw-bold text-primary">$${producto.price}</h6>
-          </div>
-          <div class="card-footer d-flex justify-content-between bg-white border-0">
-            <button class="btn btn-outline-secondary btn-sm">
-              <i class="bi bi-cart me-2"></i>
-              <span>Agregar</span>
-            </button>
-            <button class="btn btn-outline-secondary btn-sm">
-              <i class="bi bi-plus-square me-2 pe-none"></i>
-              <span class="pe-none">Ver mas</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    `)).join(',').replace(/\,/g, '').toString()
-
-    productosContainer.innerHTML = productosHtml
-  </script>
+  <script src="../plugins/bootstrap/bootstrap.min.js"></script>
 </body>
 
 </html>
