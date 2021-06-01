@@ -109,6 +109,10 @@
   text-transform: uppercase;
 }
 
+.txt\:lowercase {
+  text-transform: lowercase;
+}
+
 .cursor\:pointer:hover {
   cursor: pointer;
 }
