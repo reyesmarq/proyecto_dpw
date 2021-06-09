@@ -44,34 +44,42 @@
   ];
 
   document.addEventListener('DOMContentLoaded', (e) => {
+    // ! borrar esto una vez listo para entregar
+    localStorage.clear();
+
     let ProductosContainer = document.getElementById('productosContainer');
 
     let productosHtml = productos
-      .map(
-        (producto) => `
-      <div class="col-md-3">
-        <div class="card mb-4 border-0 shadow-sm card:effect">
-          <img src="${producto.imageUrl}" alt="" class="card-img-top card:img:crop">
-          <div class="card-body">
-            <p class="cart-text small txt:trun:5">
-              ${producto.description}
-            </p>
-            <h6 class="card-title fw-bold text-primary">$${producto.price}</h6>
+      .map((producto) => {
+        return `
+          <div class="col-md-3">
+            <div class="card mb-4 border-0 shadow-sm card:effect">
+              <img src="${producto.imageUrl}" alt="" class="card-img-top card:img:crop">
+              <div class="card-body">
+                <p class="cart-text small txt:trun:5">
+                  ${producto.description}
+                </p>
+                <h6 class="card-title fw-bold text-primary">$${producto.price}</h6>
+              </div>
+              <div class="card-footer d-flex justify-content-between bg-white border-0">
+                <button class="btn btn-outline-secondary btn-sm"
+                  data-product-id=${producto.id}
+                  data-product-image-url=${producto.imageUrl}
+                  data-product-description=${producto.description}
+                  data-product-price=${producto.price}
+                >
+                  <i class="bi bi-cart me-2 pe-none"></i>
+                  <span class="pe-none">Agregar</span>
+                </button>
+                <button class="btn btn-outline-secondary btn-sm">
+                  <i class="bi bi-plus-square me-2 pe-none"></i>
+                  <span class="pe-none">Ver mas</span>
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="card-footer d-flex justify-content-between bg-white border-0">
-            <button class="btn btn-outline-secondary btn-sm">
-              <i class="bi bi-cart me-2"></i>
-              <span>Agregar</span>
-            </button>
-            <button class="btn btn-outline-secondary btn-sm">
-              <i class="bi bi-plus-square me-2 pe-none"></i>
-              <span class="pe-none">Ver mas</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    `
-      )
+        `;
+      })
       .join(',')
       .replace(/\,/g, '')
       .toString();
@@ -80,6 +88,21 @@
 
     ProductosContainer.addEventListener('click', (e) => {
       let Alert = document.getElementById('alert');
+
+      // console.log('producto', JSON.parse(e.target.dataset['producto']));
+
+      let product = {
+        id: e.target.dataset['productId'],
+        imageUrl: `.${e.target.dataset['productImageUrl']}`,
+        description: e.target.dataset['productDescription'],
+        quantity: 1,
+        price: e.target.dataset['productPrice'],
+      };
+
+      console.log('product', product);
+
+      // Agregar producto al carrito
+      agregarProductoACarrito(product);
 
       // Si existe una notificacion, entonces ya no crear nodo y retornar.
       // Evita duplicado de notificaciones.
@@ -110,5 +133,16 @@
     container.appendChild(alertText);
     alertContainer.appendChild(container);
     document.body.appendChild(alertContainer);
+  }
+
+  function agregarProductoACarrito(product) {
+    let productsExist = localStorage.getItem('checkout');
+    if (!productsExist) {
+      localStorage.setItem('checkout', JSON.stringify([]));
+    }
+
+    const products = JSON.parse(localStorage.getItem('checkout'));
+
+    localStorage.setItem('checkout', JSON.stringify([...products, product]));
   }
 })();
