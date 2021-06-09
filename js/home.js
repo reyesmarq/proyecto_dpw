@@ -114,7 +114,7 @@
   function mostrarAlerta() {
     let alertContainer = document.createElement('div');
     alertContainer.className =
-      'alert alert-success alert-dismissible fade show alert zi:tooltip';
+      'alert alert-success alert-dismissible fade show alert zi:tooltip alert:fixed';
     alertContainer.setAttribute('id', 'alert');
 
     let container = document.createElement('div');

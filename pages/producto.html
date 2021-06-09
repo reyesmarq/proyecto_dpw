@@ -125,8 +125,7 @@
           <ul class="list-group">
             <li class="list-group-item d-flex b:r:0">
               <i class="bi bi-mouse me-4"></i>
-              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./productos/accesorios.html">
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./productos/accesorios.html">
                 Accesorios
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -142,8 +141,7 @@
 
             <li class="list-group-item d-flex">
               <i class="bi bi-laptop me-4"></i>
-              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./productos/computadoras.html">
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./productos/computadoras.html">
                 Computadoras
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -151,8 +149,7 @@
 
             <li class="list-group-item d-flex">
               <i class="bi bi-upc-scan me-4"></i>
-              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./productos/componentes.html">
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./productos/componentes.html">
                 Componentes
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -169,8 +166,7 @@
 
             <li class="list-group-item d-flex">
               <i class="bi bi-printer me-4"></i>
-              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./productos/impresion.html">
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./productos/impresion.html">
                 Impresion
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -178,8 +174,7 @@
 
             <li class="list-group-item d-flex">
               <i class="bi bi-disc me-4"></i>
-              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./productos/software.html">
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./productos/software.html">
                 Software
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -187,8 +182,7 @@
 
             <li class="list-group-item d-flex">
               <i class="bi bi-display me-4"></i>
-              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./productos/monitores.html">
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./productos/monitores.html">
                 Monitores
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -204,8 +198,7 @@
 
             <li class="list-group-item d-flex b:r:0">
               <i class="bi bi-battery me-4"></i>
-              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./productos/energia.html">
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./productos/energia.html">
                 Energia
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -214,7 +207,13 @@
         </div>
         <!-- Contenido principal -->
         <div class="col p-0">
-          Contenido principal
+          <div class="row">
+            <div class="col-md-5 border">
+              <!-- <img src="../images/1.1.PNG" alt="" class="border img:100" id="imageUrl"> -->
+              <img alt="" class="border img:100" id="imageUrl">
+            </div>
+            <div class="col border">resto del producto</div>
+          </div>
         </div>
       </div>
     </div>
@@ -390,15 +389,11 @@
 
   <script src="../plugins/bootstrap/bootstrap.min.js"></script>
   <script src="../js/producto.js"></script>
-  <!-- <script>
-    let url = window.location
-    let pathname = url.pathname
-    let params = url.search
-    console.log('pathname', pathname)
-
-    if (pathname === '/pages/producto.html') console.log('testing')
-    console.log('params', params)
-  </script> -->
+  <script>
+    let ImageUrl = document.getElementById('imageUrl')
+    // src="../images/1.1.PNG" 
+    ImageUrl.setAttribute('src', '../images/1.1.PNG');
+  </script>
 </body>
 
 </html>
