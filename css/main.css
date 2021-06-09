@@ -21,13 +21,13 @@
   transition: 0.5s all;
 }
 
-.card\:effect > .card-footer > button.btn {
+/* .card\:effect > .card-footer > button.btn {
   opacity: 0;
 }
 
 .card\:effect:hover > .card-footer > button.btn {
   opacity: 1;
-}
+} */
 
 .list-group\:effect > li {
   transition: 0.5s all;
@@ -115,4 +115,10 @@
 
 .cursor\:pointer:hover {
   cursor: pointer;
+}
+
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
