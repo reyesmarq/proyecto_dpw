@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', async (e) => {
     window.location.href = '../../index.html';
 
   let ProductosContainer = document.getElementById('productosContainer');
+  let NombreCategoria = document.getElementById('nombreCategoria')
 
   let productosHtml =  productosCategoria
     .map((producto, index) => {
@@ -67,4 +68,5 @@ document.addEventListener('DOMContentLoaded', async (e) => {
     .toString();
 
   ProductosContainer.innerHTML = productosHtml
+  nombreCategoria.innerHTML = nombre
 });
