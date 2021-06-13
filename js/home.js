@@ -9,9 +9,8 @@
     let productosHtml = productos
       .map((producto) => {
         const { images, description, price, id, categoria } = producto;
-        const imageUrl = `./images/${producto.images[0]}.png`;
+        const imageUrl = `./images/${images[0]}.png`;
 
-        console.log('imageUrl', imageUrl);
         return `
           <div class="col-md-3">
             <div class="card mb-4 border-0 shadow-sm card:effect">
@@ -24,18 +23,18 @@
               </div>
               <div class="card-footer d-flex justify-content-between bg-white border-0">
                 <button class="btn btn-outline-secondary btn-sm"
-                  data-product-id=${producto.id}
-                  data-product-image-url=${producto.imageUrl}
-                  data-product-description=${producto.description}
-                  data-product-price=${producto.price}
+                  data-product-id=${id}
+                  data-product-image-url=${imageUrl}
+                  data-product-description=${description}
+                  data-product-price=${price}
                 >
                   <i class="bi bi-cart me-2 pe-none"></i>
                   <span class="pe-none">Agregar</span>
                 </button>
-                <button class="btn btn-outline-secondary btn-sm">
+                <a class="btn btn-outline-secondary btn-sm" href="./pages/producto.html?id=${id}" id="productoUrl">
                   <i class="bi bi-plus-square me-2 pe-none"></i>
                   <span class="pe-none">Ver mas</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -48,9 +47,10 @@
     ProductosContainer.innerHTML = productosHtml;
 
     ProductosContainer.addEventListener('click', (e) => {
-      let Alert = document.getElementById('alert');
+      // if the click was on the redirect Url
+      if (e.target.id === 'productoUrl') return;
 
-      // console.log('producto', JSON.parse(e.target.dataset['producto']));
+      let Alert = document.getElementById('alert');
 
       let product = {
         id: e.target.dataset['productId'],
