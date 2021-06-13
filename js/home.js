@@ -24,7 +24,7 @@
               <div class="card-footer d-flex justify-content-between bg-white border-0">
                 <button class="btn btn-outline-secondary btn-sm"
                   data-product-id=${id}
-                  data-product-image-url=${imageUrl}
+                  data-product-image-url=${images[0]}
                   data-product-description=${description}
                   data-product-price=${price}
                 >
@@ -54,7 +54,7 @@
 
       let product = {
         id: e.target.dataset['productId'],
-        imageUrl: `.${e.target.dataset['productImageUrl']}`,
+        imageUrl: `${e.target.dataset['productImageUrl']}`,
         description: e.target.dataset['productDescription'],
         quantity: 1,
         price: e.target.dataset['productPrice'],
@@ -98,14 +98,28 @@
 
   function agregarProductoACarrito(product) {
     let productsExist = localStorage.getItem('checkout');
+    console.log('product', product);
     if (!productsExist) {
       localStorage.setItem('checkout', JSON.stringify([]));
     }
 
     const products = JSON.parse(localStorage.getItem('checkout'));
 
-    localStorage.setItem('checkout', JSON.stringify([...products, product]));
+    const mismoProducto = products.find((p) => p.id == product.id);
 
+    if (mismoProducto) {
+      let productIndex = products.findIndex((p) => p.id == product.id);
+
+      products.splice(productIndex, 1, {
+        ...mismoProducto,
+        quantity: mismoProducto.quantity + 1,
+      });
+
+      localStorage.setItem('checkout', JSON.stringify([...products]));
+      return;
+    }
+
+    localStorage.setItem('checkout', JSON.stringify([...products, product]));
     actualizarCarrito(products.length);
   }
 
