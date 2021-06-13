@@ -1,65 +1,26 @@
 (() => {
-  let productos = [
-    {
-      id: 1,
-      imageUrl: './images/1.1.png',
-      description: 'Mouse Inalambrico Vorago MO-207 Rosa',
-      price: 4.95,
-    },
-    {
-      id: 2,
-      imageUrl: './images/2.1.png',
-      description:
-        'Silla Gamer Deportiva Vertagear SL1000 Black/Green VG-SL1000-GR',
-      price: 294.95,
-    },
-    {
-      id: 3,
-      imageUrl: './images/3.1.png',
-      description:
-        'Teclado Gamer REDRAGON K589RGB-SP SHRAPNEL / Alambrico / RGB / Mecánico / Outemu Blue LP / Español / K589RGB-SP-SHRAPNEL',
-      price: 78.45,
-    },
-    {
-      id: 4,
-      imageUrl: './images/4.1.png',
-      description:
-        'Mochila Gamer para laptop / Trust Gaming Hunter GXT1250C / 15.6" / Camuflaje / Resistente al agua / Antirasguños / Antichoques / 23868',
-      price: 49.95,
-    },
-    {
-      id: 5,
-      imageUrl: './images/5.1.png',
-      description:
-        'Lentes Gamer Xzeal XZAGG50R XZ500 Rojos / Anti Blue Light / Termoplástico TR90 / Estuche y Microfibra incluidos',
-      price: 18.45,
-    },
-    {
-      id: 6,
-      imageUrl: './images/6.1.png',
-      description:
-        'Camara Web HD Logitech C505 / 720p-30FPS / 960-001363 / Promo Logi',
-      price: 18.45,
-    },
-  ];
-
-  document.addEventListener('DOMContentLoaded', (e) => {
-    // // ! borrar esto una vez listo para entregar
-    // localStorage.clear();
+  document.addEventListener('DOMContentLoaded', async (e) => {
+    let productos = await fetch('../data/productos.json').then((res) =>
+      res.json()
+    );
 
     let ProductosContainer = document.getElementById('productosContainer');
 
     let productosHtml = productos
       .map((producto) => {
+        const { images, description, price, id, categoria } = producto;
+        const imageUrl = `./images/${producto.images[0]}.png`;
+
+        console.log('imageUrl', imageUrl);
         return `
           <div class="col-md-3">
             <div class="card mb-4 border-0 shadow-sm card:effect">
-              <img src="${producto.imageUrl}" alt="" class="card-img-top card:img:crop">
+              <img src="${imageUrl}" alt="" class="card-img-top card:img:crop">
               <div class="card-body">
                 <p class="cart-text small txt:trun:5">
-                  ${producto.description}
+                  ${description}
                 </p>
-                <h6 class="card-title fw-bold text-primary">$${producto.price}</h6>
+                <h6 class="card-title fw-bold text-primary">$${price}</h6>
               </div>
               <div class="card-footer d-flex justify-content-between bg-white border-0">
                 <button class="btn btn-outline-secondary btn-sm"
