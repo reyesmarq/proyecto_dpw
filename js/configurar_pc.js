@@ -17,10 +17,6 @@
   document.addEventListener('DOMContentLoaded', (e) => {
     let ConfigurarPC = document.getElementById('configurarPc');
 
-    // ! Asignarlo a falso para la entrega.
-    let resetLocalStorage = true;
-    if (resetLocalStorage) localStorage.clear();
-
     // Evento click
     ConfigurarPC.addEventListener('click', (e) => {
       let isTargetInRange = false;
