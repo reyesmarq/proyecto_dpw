@@ -131,6 +131,12 @@
   right: 20px;
 }
 
+/* navbar */
 ul.navbar-nav > li.nav-item:hover {
+  background: #d2f2f9;
+}
+
+/* categorias */
+.col-md-3.p-0 > .list-group > .list-group-item:hover {
   background: #d2f2f9;
 }
