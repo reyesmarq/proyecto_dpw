@@ -53,14 +53,14 @@
 /* Remueve el outline del componente accordion */
 .accordion-button:focus {
   box-shadow: none;
-  border-color: rgba(0,0,0,.125);
+  border-color: rgba(0, 0, 0, 0.125);
 }
 
 .carousel\:indicadores button {
   width: 10px !important;
   height: 10px !important;
   border-radius: 50% !important;
-  background-color: #0D6EFC !important;
+  background-color: #0d6efc !important;
 }
 
 /********************************************************
@@ -129,4 +129,8 @@
   position: fixed;
   top: 20px;
   right: 20px;
+}
+
+ul.navbar-nav > li.nav-item:hover {
+  background: #d2f2f9;
 }
