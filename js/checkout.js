@@ -23,6 +23,8 @@
 
     BtnBorrarCarrito.addEventListener('click', () => {
       localStorage.setItem('checkout', JSON.stringify([]));
+
+      buildCheckout();
     });
   });
 
