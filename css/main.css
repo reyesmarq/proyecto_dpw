@@ -56,6 +56,13 @@
   border-color: rgba(0,0,0,.125);
 }
 
+.carousel\:indicadores button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #0D6EFC !important;
+}
+
 /********************************************************
  * Utilities classes
  * Convencion, propiedad:[propiedad-secundaria]:valor
