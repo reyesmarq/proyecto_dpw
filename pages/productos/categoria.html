@@ -6,13 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="./plugins/bootstrap/icons/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../../plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../plugins/bootstrap/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
-
   <header>
     <!-- Navbar secundario -->
     <div class="container">
@@ -21,10 +20,10 @@
         <div class="col-md-4">
           <ul class="list-group list-group-horizontal justify-content-center">
             <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
-              <a href="./pages/nosotros.html" class="text-decoration-none">Nosotros</a>
+              <a href="../nosotros.html" class="text-decoration-none">Nosotros</a>
             </li>
             <li class="list-group-item border-0">
-              <a href="./pages/contacto.html" class="text-decoration-none">Contacto</a>
+              <a href="../contacto.html" class="text-decoration-none">Contacto</a>
             </li>
           </ul>
         </div>
@@ -54,7 +53,7 @@
         </div>
         <!-- Contenido de derecha -->
         <div class="col-md-4 text-center">
-          <a href="./pages/iniciar_sesion.html" class="text-decoration-none">
+          <a href="../iniciar_sesion.html" class="text-decoration-none">
             <ul class="list-group list-group-horizontal justify-content-center">
               <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
                 Iniciar sesion
@@ -70,8 +69,8 @@
     <!-- Navbar principal -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light pt-5 pb-5">
       <div class="container">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./images/ninis-iso.png" alt="" width="100">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../images/ninis-iso.png" alt="" width="100">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
           aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +79,7 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item border-end ps-2 pe-2">
-              <a class="nav-link active" aria-current="home" href="./index.html">
+              <a class="nav-link active" aria-current="home" href="../../index.html">
                 <i class="bi bi-house-door-fill text-secondary"></i>
               </a>
             </li>
@@ -88,13 +87,13 @@
               <a class="nav-link" href="#">Productos</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
-              <a class="nav-link" href="./pages/contacto.html">Tiendas</a>
+              <a class="nav-link" href="../contacto.html">Tiendas</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
               <a class="nav-link" href="#">Pride</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
-              <a class="nav-link" href="./pages/configurar_pc.html">Configurar PC</a>
+              <a class="nav-link" href="../configurar_pc.html">Configurar PC</a>
             </li>
             <li class="nav-item border-end ps-2 pe-2">
               <a class="nav-link" href="#">Asus PC</a>
@@ -110,8 +109,8 @@
               <button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
             </div>
           </form>
-          <a class="navbar-text cursor:pointer text-decoration-none ms-3" href="./pages/checkout.html">
-            <span class="pe-none" id="carrito">0<i class="bi bi-cart pe-none"></i> | Comprar</span>
+          <a class="navbar-text cursor:pointer text-decoration-none ms-3" href="../checkout.html">
+            <span class="pe-none">0<i class="bi bi-cart pe-none"></i> | Comprar</span>
           </a>
         </div>
       </div>
@@ -121,13 +120,30 @@
   <main>
     <div class="container mt-4 mb-4">
       <div class="row gap-3">
+        <!-- Contenido principal -->
+        <div class="col p-0">
+
+          <div class="border-bottom pb-2 mb-4">
+            <div aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">Productos</li>
+                <li class="breadcrumb-item active text-success" aria-current="page">Accesorios</li>
+              </ol>
+            </div>
+          </div>
+          <!-- Contenido de las tarjetas de productos -->
+          <div class="row" id="productosContainer">
+            <!-- Secion don de se insertaran los productos a traves de javascript -->
+          </div>
+        </div>
+
         <!-- Categorias -->
         <div class="col-md-3 p-0">
           <ul class="list-group">
             <li class="list-group-item d-flex b:r:0">
               <i class="bi bi-mouse me-4"></i>
               <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./pages/productos/categoria.html?nombre=accesorios">
+                href="./accesorios.html">
                 Accesorios
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -135,7 +151,7 @@
 
             <li class="list-group-item d-flex">
               <i class="bi bi-mic me-4"></i>
-              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./pages/productos/audio.html">
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./audio.html">
                 Audio
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -144,7 +160,7 @@
             <li class="list-group-item d-flex">
               <i class="bi bi-laptop me-4"></i>
               <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./pages/productos/computadoras.html">
+                href="./computadoras.html">
                 Computadoras
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -153,7 +169,7 @@
             <li class="list-group-item d-flex">
               <i class="bi bi-upc-scan me-4"></i>
               <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./pages/productos/componentes.html">
+                href="./componentes.html">
                 Componentes
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -162,7 +178,7 @@
             <li class="list-group-item d-flex">
               <i class="bi bi-menu-app me-4"></i>
               <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./pages/productos/almacenamiento.html">
+                href="./almacenamiento.html">
                 Almacenamiento
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -171,7 +187,7 @@
             <li class="list-group-item d-flex">
               <i class="bi bi-printer me-4"></i>
               <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./pages/productos/impresion.html">
+                href="./impresion.html">
                 Impresion
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -180,7 +196,7 @@
             <li class="list-group-item d-flex">
               <i class="bi bi-disc me-4"></i>
               <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./pages/productos/software.html">
+                href="./software.html">
                 Software
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -189,7 +205,7 @@
             <li class="list-group-item d-flex">
               <i class="bi bi-display me-4"></i>
               <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./pages/productos/monitores.html">
+                href="./monitores.html">
                 Monitores
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -197,7 +213,7 @@
 
             <li class="list-group-item d-flex">
               <i class="bi bi-hdd-network me-4"></i>
-              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./pages/productos/redes.html">
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark" href="./redes.html">
                 Redes
               </a>
               <i class="bi bi-arrow-right-circle"></i>
@@ -206,104 +222,16 @@
             <li class="list-group-item d-flex b:r:0">
               <i class="bi bi-battery me-4"></i>
               <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
-                href="./pages/productos/energia.html">
+                href="./energia.html">
                 Energia
               </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
           </ul>
         </div>
-        <!-- Contenido principal -->
-        <div class="col p-0">
-          <!-- Carousel -->
-          <div id="homeCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active carousel:item" data-bs-interval="10000">
-                <img
-                  src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item carousel:item" data-bs-interval="2000">
-                <img
-                  src="https://images.pexels.com/photos/221011/pexels-photo-221011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item carousel:item">
-                <img
-                  src="https://images.pexels.com/photos/1181210/pexels-photo-1181210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="border-bottom pb-2 mb-4">
-            <h5>Productos destacados</h5>
-          </div>
-          <!-- Contenido de las tarjetas de productos -->
-          <div class="row" id="productosContainer">
-            <!-- Secion don de se insertaran los productos a traves de javascript -->
-          </div>
-        </div>
       </div>
     </div>
   </main>
-
-  <aside>
-    <!-- Footer cards -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 p-0">
-          <div class="card text-white border-0 footer:card bg:sheet">
-            <img src="https://concepto.de/wp-content/uploads/2018/08/placa-madre4-e1534448782751.jpg"
-              class="card-img card:bg:img b:r:0" alt="...">
-            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
-              <h3 class="card-title pb-2">Configurador</h3>
-              <p class="card-text pb-2">
-                ¿Buscas la computadora ideal para ti?, Encuentra tu computadora perfecta respondiendo estas simples
-                preguntas. Tendrás lo que necesitas al instante.
-              </p>
-              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 p-0">
-          <div class="card text-white border-0 footer:card bg:sheet">
-            <img src="https://www.amd.com/system/files/amd-logo-circuit-background-1200x628.jpg"
-              class="card-img card:bg:img b:r:0" alt="...">
-            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
-              <h3 class="card-title pb-2">AMD</h3>
-              <p class="card-text pb-2">
-                Todo lo que necesitas para llevar tus partidas al siguiente nivel con Pride. Siente el orgullo Gamer y
-                llena tus partidas de poder con el equipo de Pride.
-              </p>
-              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 p-0">
-          <div class="card text-white border-0 footer:card bg:sheet">
-            <img src="https://www.residentevil.com/village/assets/images/common/share.png"
-              class="card-img card:bg:img b:r:0" alt="...">
-            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
-              <h3 class="card-title pb-2">Código Trauma Pack RE Village</h3>
-              <p class="card-text pb-2">
-                Aprovecha esta promo de HyperX
-              </p>
-              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </aside>
 
   <footer>
     <!-- Info y data -->
@@ -323,28 +251,28 @@
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none" href="./pages/configurar_pc.html">
+                <a class="small text-white text-decoration-none" href="../configurar_pc.html">
                   Configurar
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none" href="./pages/nosotros.html">
+                <a class="small text-white text-decoration-none" href="../nosotros.html">
                   Nosotros
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none" href="./pages/promocion.html">
+                <a class="small text-white text-decoration-none" href="../promocion.html">
                   Promociones
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0 b:r:0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none" href="./pages/contacto.html">
+                <a class="small text-white text-decoration-none" href="../contacto.html">
                   Contacto
                 </a>
               </li>
@@ -364,14 +292,14 @@
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none" href="./pages/preguntas_frecuentes.html">
+                <a class="small text-white text-decoration-none" href="../preguntas_frecuentes.html">
                   Preguntas frecuentes
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0 b:r:0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none" href="./pages/aviso_legal.html">
+                <a class="small text-white text-decoration-none" href="../aviso_legal.html">
                   Aviso legal
                 </a>
               </li>
@@ -380,7 +308,7 @@
 
           <!-- Logo & copyright -->
           <div class="col-md-2 text-center text-white small">
-            <img src="./images/ninis-isowhite.png" alt="" width="100">
+            <img src="../../images/ninis-isowhite.png" alt="" width="100">
             <p class="mb-0">Ninis © 2021</p>
             <p>Desarrollado por <span class="fw-bold">dpw</span></p>
           </div>
@@ -473,9 +401,8 @@
     </div>
   </aside>
 
-  <script src="./plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="./js/home.js"></script>
-  <script src="./js/estadoCarrito.js"></script>
+  <script src="../../plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="../../js/categoria.js"></script>
 </body>
 
 </html>
