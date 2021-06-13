@@ -11,6 +11,10 @@
       ? JSON.parse(localStorage.getItem('checkout')).length
       : 0;
 
-    Carrito.innerHTML = `${total}<i class="bi bi-cart pe-none"></i> | Comprar`;
+    Carrito.innerHTML = `
+      <span class="text-success h6">${total}
+      <i class="bi bi-cart pe-none"></i> | Comprar
+      </span>
+    `;
   });
 })();

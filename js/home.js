@@ -126,8 +126,10 @@
   function actualizarCarrito(total) {
     let Carrito = document.getElementById('carrito');
 
-    Carrito.innerHTML = `${
-      total + 1
-    }<i class="bi bi-cart pe-none"></i> | Comprar`;
+    Carrito.innerHTML = `
+      <span class="text-success h6">${total + 1}
+      <i class="bi bi-cart pe-none"></i> | Comprar
+      </span>
+    `;
   }
 })();
