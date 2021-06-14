@@ -25,7 +25,7 @@
                 <button class="btn btn-outline-secondary btn-sm"
                   data-product-id=${id}
                   data-product-image-url=${images[0]}
-                  data-product-description=${description}
+                  data-product-description="${description}"
                   data-product-price=${price}
                 >
                   <i class="bi bi-cart me-2 pe-none"></i>
