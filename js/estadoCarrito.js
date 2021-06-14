@@ -12,7 +12,7 @@
       : 0;
 
     Carrito.innerHTML = `
-      <span class="text-success h6">${total}
+      <span class="text-info h6 fw-bold">${total}
       <i class="bi bi-cart pe-none"></i> | Comprar
       </span>
     `;

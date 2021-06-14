@@ -50,12 +50,12 @@ document.addEventListener('DOMContentLoaded', async (e) => {
   
   <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
     data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #0D6EFC; border-radius:6px"></span>
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carousel"
     data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #0D6EFC; border-radius:6px"></span>
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
   `;
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', async (e) => {
     <span class="me-3">
       <input type="number" value="1" class="form-control" style="width: 100px" min="1" max="10">
     </span>
-    <button class="btn btn-outline-secondary btn-sm"
+    <button class="btn btn-success btn-sm"
       data-product-id=${producto.id}
       data-product-image-url=${producto.images[0]}
       data-product-description="${producto.description}"
