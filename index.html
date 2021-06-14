@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Indice | ninis</title>
   <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./plugins/bootstrap/icons/bootstrap-icons.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+
   <header>
     <!-- Navbar secundario -->
     <div class="container">
@@ -79,7 +80,7 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item border-end ps-2 pe-2">
-              <a class="nav-link active" aria-current="home" href="./index.html">
+              <a class="nav-link" aria-current="home" href="./index.html">
                 <i class="bi bi-house-door-fill text-secondary"></i>
               </a>
             </li>
@@ -106,11 +107,11 @@
             <div class="input-group">
               <input type="text" class="form-control"
                 style="border-bottom-left-radius: 20px; border-top-left-radius: 20px;">
-              <button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
+              <button class="btn btn-info" type="button" id="btnBuscar">Buscar</button>
             </div>
           </form>
           <a class="navbar-text cursor:pointer text-decoration-none ms-3" href="./pages/checkout.html">
-            <span class="pe-none">0<i class="bi bi-cart pe-none"></i> | Comprar</span>
+            <span class="pe-none" id="carrito">0<i class="bi bi-cart pe-none"></i> | Comprar</span>
           </a>
         </div>
       </div>
@@ -120,78 +121,96 @@
   <main>
     <div class="container mt-4 mb-4">
       <div class="row gap-3">
-        <!-- Categorias y banners -->
+        <!-- Categorias -->
         <div class="col-md-3 p-0">
-          <!-- Categorias -->
           <ul class="list-group">
             <li class="list-group-item d-flex b:r:0">
               <i class="bi bi-mouse me-4"></i>
-              <span class="flex-grow-1">Accesorios</span>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./pages/productos/categoria.html?nombre=accesorios">
+                Accesorios
+              </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
+
             <li class="list-group-item d-flex">
               <i class="bi bi-mic me-4"></i>
-              <span class="flex-grow-1">Audio</span>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./pages/productos/categoria.html?nombre=audio">
+                Audio
+              </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
+
             <li class="list-group-item d-flex">
               <i class="bi bi-laptop me-4"></i>
-              <span class="flex-grow-1">Computadoras</span>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./pages/productos/categoria.html?nombre=computadoras">
+                Computadoras
+              </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
+
             <li class="list-group-item d-flex">
               <i class="bi bi-upc-scan me-4"></i>
-              <span class="flex-grow-1">Componentes</span>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./pages/productos/categoria.html?nombre=componentes">
+                Componentes
+              </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-droplet me-4"></i>
-              <span class="flex-grow-1">Consumubles</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
+
             <li class="list-group-item d-flex">
               <i class="bi bi-menu-app me-4"></i>
-              <span class="flex-grow-1">Almacenamiento</span>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./pages/productos/categoria.html?nombre=almacenamiento">
+                Almacenamiento
+              </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
-            <li class="list-group-item d-flex align-items-center">
-              <i class="bi bi-battery me-4"></i>
-              <span class="flex-grow-1">Electronica de consumo</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
+
             <li class="list-group-item d-flex">
               <i class="bi bi-printer me-4"></i>
-              <span class="flex-grow-1">Impresion</span>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./pages/productos/categoria.html?nombre=impresion">
+                Impresion
+              </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
+
             <li class="list-group-item d-flex">
               <i class="bi bi-disc me-4"></i>
-              <span class="flex-grow-1">Software</span>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./pages/productos/categoria.html?nombre=software">
+                Software
+              </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
+
             <li class="list-group-item d-flex">
               <i class="bi bi-display me-4"></i>
-              <span class="flex-grow-1">Monitores</span>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./pages/productos/categoria.html?nombre=monitores">
+                Monitores
+              </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-phone me-4"></i>
-              <span class="flex-grow-1">Celulares</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
+
             <li class="list-group-item d-flex">
               <i class="bi bi-hdd-network me-4"></i>
-              <span class="flex-grow-1">Redes</span>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./pages/productos/categoria.html?nombre=redes">
+                Redes
+              </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
-            <li class="list-group-item d-flex">
-              <i class="bi bi-app-indicator me-4"></i>
-              <span class="flex-grow-1">Apple</span>
-              <i class="bi bi-arrow-right-circle"></i>
-            </li>
+
             <li class="list-group-item d-flex b:r:0">
               <i class="bi bi-battery me-4"></i>
-              <span class="flex-grow-1">Energia</span>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./pages/productos/categoria.html?nombre=energia">
+                Energia
+              </a>
               <i class="bi bi-arrow-right-circle"></i>
             </li>
           </ul>
@@ -239,8 +258,8 @@
     </div>
   </main>
 
+  <!-- Footer cards -->
   <aside>
-    <!-- Footer cards -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 p-0">
@@ -280,7 +299,8 @@
               <p class="card-text pb-2">
                 Aprovecha esta promo de HyperX
               </p>
-              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
+              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2"
+                href="./pages/promocion.html">Ir al sitio</a>
             </div>
           </div>
         </div>
@@ -306,28 +326,28 @@
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
+                <a class="small text-white text-decoration-none" href="./pages/configurar_pc.html">
                   Configurar
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
+                <a class="small text-white text-decoration-none" href="./pages/nosotros.html">
                   Nosotros
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
-                  Blog
+                <a class="small text-white text-decoration-none" href="./pages/promocion.html">
+                  Promociones
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0 b:r:0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
+                <a class="small text-white text-decoration-none" href="./pages/contacto.html">
                   Contacto
                 </a>
               </li>
@@ -347,22 +367,15 @@
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
+                <a class="small text-white text-decoration-none" href="./pages/preguntas_frecuentes.html">
                   Preguntas frecuentes
-                </a>
-              </li>
-              <li
-                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
-                <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
-                  Aviso legal
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0 b:r:0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
-                  Terminos y condiciones
+                <a class="small text-white text-decoration-none" href="./pages/aviso_legal.html">
+                  Aviso legal
                 </a>
               </li>
             </ul>
@@ -370,7 +383,7 @@
 
           <!-- Logo & copyright -->
           <div class="col-md-2 text-center text-white small">
-            <img src="./images/ninis-iso.png" alt="" width="100">
+            <img src="./images/ninis-isowhite.png" alt="" width="100">
             <p class="mb-0">Ninis © 2021</p>
             <p>Desarrollado por <span class="fw-bold">dpw</span></p>
           </div>
@@ -404,13 +417,13 @@
               </div>
             </div>
             <div class="d-flex">
-              <a href="" class="me-2">
+              <a href="https://www.facebook.com/" target="_blank" class="me-2">
                 <span class="badge bg-primary">
                   <i class="bi bi-hand-thumbs-up-fill"></i>
                   Me gusta
                 </span>
               </a>
-              <a href="">
+              <a href="https://www.facebook.com/" target="_blank">
                 <span class="badge bg-primary">Compartir</span>
               </a>
             </div>
@@ -418,11 +431,21 @@
 
           <!-- Redes sociales -->
           <div class="col-md-2 text-center text-white">
-            <span class="h4"><i class="bi bi-facebook me-4"></i></span>
-            <span class="h4"><i class="bi bi-youtube me-4"></i></span>
-            <span class="h4"><i class="bi bi-twitter me-4"></i></span>
-            <span class="h4"><i class="bi bi-instagram me-4"></i></span>
-            <span class="h4"><i class="bi bi-google me-4"></i></span>
+            <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-facebook me-4 text-white"></i></span>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-youtube me-4 text-white"></i></span>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="text-decoration-none">
+              <span class=" h4"><i class="bi bi-twitter me-4 text-white"></i></span>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-instagram me-4 text-white"></i></span>
+            </a>
+            <a href="https://www.google.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-google me-4 text-white"></i></span>
+            </a>
           </div>
         </div>
       </div>
@@ -454,79 +477,9 @@
   </aside>
 
   <script src="./plugins/bootstrap/bootstrap.min.js"></script>
-  <script>
-    let productosContainer = document.getElementById('productosContainer');
-    let productos = [
-      {
-        id: 1,
-        imageUrl: './images/1.1.png',
-        description: 'Mouse Inalambrico Vorago MO-207 Rosa',
-        price: 4.95
-      },
-      {
-        id: 2,
-        imageUrl: './images/2.1.png',
-        description: 'Silla Gamer Deportiva Vertagear SL1000 Black/Green VG-SL1000-GR',
-        price: 294.95
-      },
-      {
-        id: 3,
-        imageUrl: './images/3.1.png',
-        description: 'Teclado Gamer REDRAGON K589RGB-SP SHRAPNEL / Alambrico / RGB / Mecánico / Outemu Blue LP / Español / K589RGB-SP-SHRAPNEL',
-        price: 78.45
-      },
-      {
-        id: 4,
-        imageUrl: './images/4.1.png',
-        description: 'Mochila Gamer para laptop / Trust Gaming Hunter GXT1250C / 15.6" / Camuflaje / Resistente al agua / Antirasguños / Antichoques / 23868',
-        price: 49.95
-      },
-      {
-        id: 5,
-        imageUrl: './images/5.1.png',
-        description: 'Lentes Gamer Xzeal XZAGG50R XZ500 Rojos / Anti Blue Light / Termoplástico TR90 / Estuche y Microfibra incluidos',
-        price: 18.45
-      },
-      {
-        id: 6,
-        imageUrl: './images/6.1.png',
-        description: 'Camara Web HD Logitech C505 / 720p-30FPS / 960-001363 / Promo Logi',
-        price: 18.45
-      },
-    ]
-
-
-    document.getElementById('productosContainer')
-      .addEventListener('click', (e) => {
-        console.log('testing')
-      })
-
-    let productosHtml = productos.map(producto => (`
-      <div class="col-md-3">
-        <div class="card mb-4 border-0 shadow-sm card:effect">
-          <img src="${producto.imageUrl}" alt="" class="card-img-top card:img:crop">
-          <div class="card-body">
-            <p class="cart-text small txt:trun:5">
-              ${producto.description}
-            </p>
-            <h6 class="card-title fw-bold text-primary">$${producto.price}</h6>
-          </div>
-          <div class="card-footer d-flex justify-content-between bg-white border-0">
-            <button class="btn btn-outline-secondary btn-sm">
-              <i class="bi bi-cart me-2"></i>
-              <span>Agregar</span>
-            </button>
-            <button class="btn btn-outline-secondary btn-sm">
-              <i class="bi bi-plus-square me-2 pe-none"></i>
-              <span class="pe-none">Ver mas</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    `)).join(',').replace(/\,/g, '').toString()
-
-    productosContainer.innerHTML = productosHtml
-  </script>
+  <script src="./js/estadoCarrito.js"></script>
+  <script src="./js/home.js"></script>
+  <script src="./js/global.js"></script>
 </body>
 
 </html>

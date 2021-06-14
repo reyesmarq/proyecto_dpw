@@ -107,12 +107,9 @@
             <div class="input-group">
               <input type="text" class="form-control"
                 style="border-bottom-left-radius: 20px; border-top-left-radius: 20px;">
-              <button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
+              <button class="btn btn-info" type="button" id="btnBuscar">Buscar</button>
             </div>
           </form>
-          <a class="navbar-text cursor:pointer text-decoration-none ms-3" href="./checkout.html">
-            <span class="pe-none">0<i class="bi bi-cart pe-none"></i> | Comprar</span>
-          </a>
         </div>
       </div>
     </nav>
@@ -123,16 +120,16 @@
       <!-- Botones -->
       <div class="row mb-4">
         <div class="col-md-6">
-          <button href="" class="btn btn-primary btn-sm px-4">
+          <button class="btn btn-primary btn-sm px-4 mb-2">
             <i class="bi bi-facebook pe-none pe-1"></i>
             Compartir en facebook
           </button>
-          <button href="" class="btn btn-secondary btn-sm px-4">
+          <button class="btn btn-secondary btn-sm px-4 mb-2">
             <i class="bi bi-share-fill pe-none pe-1"></i>
             Compartir carrito de compras
           </button>
         </div>
-        <div class="col-md-6 text-end">
+        <div class="col-md-6 text-md-end">
           <button class="btn btn-danger btn-sm px-4" id="btnBorrarCarrito">
             <i class="bi bi-trash pe-none pe-1"></i>
             Vaciar carrito de compras
@@ -141,34 +138,23 @@
       </div>
 
       <!-- Tabla de productos -->
-      <table class="table border mb-4">
-        <thead>
-          <tr class="text-center small">
-            <th scope="col" class="border">Imagen</th>
-            <th scope="col" class="border">Descripcion del producto</th>
-            <th scope="col" class="border">cantidad</th>
-            <th scope="col" class="border">Precio unitario</th>
-            <th scope="col" class="border">Precio Total</th>
-            <th scope="col" class="border">Eliminar</th>
-          </tr>
-        </thead>
-        <tbody id="checkoutBody">
-          <!-- <tr class="align-middle">
-            <th scope="row" class="p-4">
-              <img src="../images/product-1.png" alt="" width="100">
-            </th>
-            <td class="p-4">NO BREAK Y REGULADOR SMARTBITT SBNB900LCD 750VA / 6 CONTACTOS / SUPRESOR Y RESPALDO</td>
-            <td class="text-center p-4">
-              <input type="number" class="form-control" style="width: 100px" value="1" min="1" max="10">
-            </td>
-            <td class="text-center p-4">$1,599.00</td>
-            <td class="text-center p-4">$1,599.00</td>
-            <td class="text-center p-4">
-              <i class="bi bi-trash"></i>
-            </td>
-          </tr> -->
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table border mb-4">
+          <thead>
+            <tr class="text-center small">
+              <th scope="col" class="border">Imagen</th>
+              <th scope="col" class="border">Descripcion del producto</th>
+              <th scope="col" class="border">cantidad</th>
+              <th scope="col" class="border">Precio unitario</th>
+              <th scope="col" class="border">Precio Total</th>
+              <th scope="col" class="border">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody id="checkoutBody">
+            <!-- Seccion de los productos, injectados con javascript -->
+          </tbody>
+        </table>
+      </div>
 
       <!-- Cartas resumen -->
       <div class="row">
@@ -203,8 +189,8 @@
               <div class="form-control border-0">
                 <label for="entrega" class="form-label small">Tipo de entrega</label>
                 <select class="form-select" id="entrega">
-                  <option value="domicilio" selected>A domicilio</option>
-                  <option value="recoger">Recoger en una sucursal</option>
+                  <option value="recoger" selected>Recoger en una sucursal</option>
+                  <option value="domicilio">A domicilio</option>
                 </select>
               </div>
               <div class="form-control border-0">
@@ -239,7 +225,9 @@
                     <td>
                       <h5>Subtotal</h5>
                     </td>
-                    <td id="subtotal">$1,999.00</td>
+                    <td id="subtotal">
+                      <!-- Numero es manejado a traves de javascript -->
+                    </td>
                   </tr>
                   <tr>
                     <td>
@@ -291,28 +279,28 @@
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
+                <a class="small text-white text-decoration-none" href="./configurar_pc.html">
                   Configurar
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
+                <a class="small text-white text-decoration-none" href="./nosotros.html">
                   Nosotros
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
-                  Blog
+                <a class="small text-white text-decoration-none" href="./promocion.html">
+                  Promociones
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0 b:r:0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
+                <a class="small text-white text-decoration-none" href="./contacto.html">
                   Contacto
                 </a>
               </li>
@@ -332,22 +320,15 @@
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
+                <a class="small text-white text-decoration-none" href="./preguntas_frecuentes.html">
                   Preguntas frecuentes
-                </a>
-              </li>
-              <li
-                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
-                <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
-                  Aviso legal
                 </a>
               </li>
               <li
                 class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0 b:r:0">
                 <span class="small pe-3">●</span>
-                <a class="small text-white text-decoration-none">
-                  Terminos y condiciones
+                <a class="small text-white text-decoration-none" href="./aviso_legal.html">
+                  Aviso legal
                 </a>
               </li>
             </ul>
@@ -355,7 +336,7 @@
 
           <!-- Logo & copyright -->
           <div class="col-md-2 text-center text-white small">
-            <img src="./images/ninis-iso.png" alt="" width="100">
+            <img src="../images/ninis-isowhite.png" alt="" width="100">
             <p class="mb-0">Ninis © 2021</p>
             <p>Desarrollado por <span class="fw-bold">dpw</span></p>
           </div>
@@ -389,13 +370,13 @@
               </div>
             </div>
             <div class="d-flex">
-              <a href="" class="me-2">
+              <a href="https://www.facebook.com/" target="_blank" class="me-2">
                 <span class="badge bg-primary">
                   <i class="bi bi-hand-thumbs-up-fill"></i>
                   Me gusta
                 </span>
               </a>
-              <a href="">
+              <a href="https://www.facebook.com/" target="_blank">
                 <span class="badge bg-primary">Compartir</span>
               </a>
             </div>
@@ -403,11 +384,21 @@
 
           <!-- Redes sociales -->
           <div class="col-md-2 text-center text-white">
-            <span class="h4"><i class="bi bi-facebook me-4"></i></span>
-            <span class="h4"><i class="bi bi-youtube me-4"></i></span>
-            <span class="h4"><i class="bi bi-twitter me-4"></i></span>
-            <span class="h4"><i class="bi bi-instagram me-4"></i></span>
-            <span class="h4"><i class="bi bi-google me-4"></i></span>
+            <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-facebook me-4 text-white"></i></span>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-youtube me-4 text-white"></i></span>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="text-decoration-none">
+              <span class=" h4"><i class="bi bi-twitter me-4 text-white"></i></span>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-instagram me-4 text-white"></i></span>
+            </a>
+            <a href="https://www.google.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-google me-4 text-white"></i></span>
+            </a>
           </div>
         </div>
       </div>

@@ -4,36 +4,10 @@
   document.addEventListener('DOMContentLoaded', (e) => {
     if (!TBody) TBody = document.getElementById('checkoutBody');
     const BtnBorrarCarrito = document.getElementById('btnBorrarCarrito');
-    // ! IT should be remove
-    localStorage.setItem(
-      'checkout',
-      JSON.stringify([
-        {
-          id: 1,
-          imageUrl: '../images/product-1.png',
-          description:
-            'NO BREAK Y REGULADOR SMARTBITT SBNB900LCD 750VA / 6 CONTACTOS / SUPRESOR Y RESPALDO',
-          quantity: 1,
-          price: 1599.0,
-        },
-        {
-          id: 2,
-          imageUrl: '../images/product-1.png',
-          description:
-            'NO BREAK Y REGULADOR SMARTBITT SBNB900LCD 750VA / 6 CONTACTOS / SUPRESOR Y RESPALDO',
-          quantity: 1,
-          price: 1599.0,
-        },
-        {
-          id: 3,
-          imageUrl: '../images/product-1.png',
-          description:
-            'NO BREAK Y REGULADOR SMARTBITT SBNB900LCD 750VA / 6 CONTACTOS / SUPRESOR Y RESPALDO',
-          quantity: 3,
-          price: 200.0,
-        },
-      ])
-    );
+    let Entrega = document.getElementById('entrega');
+
+    // Actualizando el total
+    actualizarTotal();
 
     // build the checkout
     buildCheckout();
@@ -53,6 +27,13 @@
 
     BtnBorrarCarrito.addEventListener('click', () => {
       localStorage.setItem('checkout', JSON.stringify([]));
+
+      actualizarTotal();
+      buildCheckout();
+    });
+
+    Entrega.addEventListener('change', (e) => {
+      actualizarTotal();
     });
   });
 
@@ -62,30 +43,33 @@
   function buildCheckout() {
     let products = JSON.parse(localStorage.getItem('checkout'));
 
-    let htmlContent = products.map(
-      (product) => `
-      <tr class="align-middle">
-        <th scope="row" class="p-4">
-          <img src="${product.imageUrl}" alt="" width="100">
-        </th>
-        <td class="p-4">${product.description}</td>
-        <td class="text-center p-4">
-          <input type="number" class="form-control" style="width: 100px" value="${
-            product.quantity
-          }" min="1" max="10" data-action="quantity" data-product-id=${
+    let htmlContent = products.map((product) => {
+      let imageUrl = `../images/${product.imageUrl}.png`;
+      return `
+        <tr class="align-middle">
+          <th scope="row" class="p-4">
+            <img src="${imageUrl}" alt="" width="100">
+          </th>
+          <td class="p-4">${product.description}</td>
+          <td class="text-center p-4">
+            <input type="number" class="form-control" style="width: 100px" value="${
+              product.quantity
+            }" min="1" max="10" data-action="quantity" data-product-id=${
         product.id
       }>
-        </td>
-        <td class="text-center p-4">$${product.price}</td>
-        <td class="text-center p-4">$${product.price * product.quantity}</td>
-        <td class="text-center p-4">
-          <i class="bi bi-trash" data-product-id="${
-            product.id
-          }" data-action="delete"></i>
-        </td>
-      </tr>
-    `
-    );
+          </td>
+          <td class="text-center p-4">$${product.price}</td>
+          <td class="text-center p-4">$${Number(
+            product.price * product.quantity
+          ).toFixed(2)}</td>
+          <td class="text-center p-4">
+            <i class="bi bi-trash cursor:pointer text-danger" data-product-id="${
+              product.id
+            }" data-action="delete"></i>
+          </td>
+        </tr>
+      `;
+    });
 
     TBody.innerHTML = htmlContent;
   }
@@ -103,6 +87,9 @@
 
     // Guardamos la nueva informacion del arreglo
     localStorage.setItem('checkout', JSON.stringify(products));
+
+    // calculando el total
+    actualizarTotal();
 
     // Contruimos nuevamente el layout
     buildCheckout();
@@ -125,7 +112,37 @@
     // updateing the local storage with the new products object
     localStorage.setItem('checkout', JSON.stringify(products));
 
+    // Actualizando el total
+    actualizarTotal();
+
     // re- render the html
     buildCheckout();
+  }
+
+  function actualizarTotal() {
+    let Subtotal = document.getElementById('subtotal');
+    let Envio = document.getElementById('envio');
+    let Total = document.getElementById('total');
+    let productos = JSON.parse(localStorage.getItem('checkout'));
+    let entrega = document.getElementById('entrega').value;
+    let envio = entrega == 'domicilio' ? 10 : 0;
+    let total;
+    let subTotal = productos.reduce((total, product) => {
+      let { quantity, price } = product;
+      let accumulative = Number(quantity) * Number(price);
+
+      return total + accumulative;
+    }, 0);
+
+    Subtotal.innerHTML = `$${subTotal.toFixed(2)}`;
+
+    total = subTotal * 1.13;
+
+    if (entrega == 'domicilio') {
+      total = subTotal * 1.13 + 10;
+    }
+
+    Envio.innerHTML = `$${envio.toFixed(2)}`;
+    Total.innerHTML = `$${total.toFixed(2)}`;
   }
 })();

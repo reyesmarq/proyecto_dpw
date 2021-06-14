@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+  <header>
+    <!-- Navbar secundario -->
+    <div class="container">
+      <div class="row align-items-center pt-2 pb-2 small">
+        <!-- Contenido de izquierda -->
+        <div class="col-md-4">
+          <ul class="list-group list-group-horizontal justify-content-center">
+            <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
+              <a href="./nosotros.html" class="text-decoration-none">Nosotros</a>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="./contacto.html" class="text-decoration-none">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contenido de centro -->
+        <div class="col-md-4 text-center">
+          <ul class="list-group list-group-horizontal justify-content-center align-items-center">
+            <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
+              <div class="row">
+                <div class="col-sm-12">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook me-2"></i></a>
+                  <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube me-2"></i></a>
+                  <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter me-2"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram me-2"></i></a>
+                  <a href="https://www.google.com/" target="_blank"><i class="bi bi-google me-2"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
+              <i class="bi bi-telephone-fill"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <a href="">
+                <span class="badge bg-warning text-dark">Ayuda</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contenido de derecha -->
+        <div class="col-md-4 text-center">
+          <a href="./iniciar_sesion.html" class="text-decoration-none">
+            <ul class="list-group list-group-horizontal justify-content-center">
+              <li class="list-group-item border-start-0 border-bottom-0 border-top-0">
+                Iniciar sesion
+              </li>
+              <li class="list-group-item border-0">
+                Registrarse
+              </li>
+            </ul>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pt-5 pb-5">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/ninis-iso.png" alt="" width="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link active" aria-current="home" href="../index.html">
+                <i class="bi bi-house-door-fill text-secondary"></i>
+              </a>
+            </li>
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link" href="./contacto.html">Tiendas</a>
+            </li>
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link" href="#">Pride</a>
+            </li>
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link" href="./configurar_pc.html">Configurar PC</a>
+            </li>
+            <li class="nav-item border-end ps-2 pe-2">
+              <a class="nav-link" href="#">Asus PC</a>
+            </li>
+            <li class="nav-item ps-2 pe-2">
+              <a class="nav-link" href="#">Aorus PC</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <div class="input-group">
+              <input type="text" class="form-control"
+                style="border-bottom-left-radius: 20px; border-top-left-radius: 20px;">
+              <button class="btn btn-info" type="button" id="btnBuscar">Buscar</button>
+            </div>
+          </form>
+          <a class="navbar-text cursor:pointer text-decoration-none ms-3" href="./checkout.html">
+            <span class="pe-none" id="carrito">0<i class="bi bi-cart pe-none"></i> | Comprar</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="my-5">
+    <div class="container">
+      <div class="text-center my-5">
+        <h4>Preguntas frecuentes</h4>
+        <p class="text-muted">Este documento fue modificado por última vez el 01 de Febrero del 2017.</p>
+      </div>
+
+      <!-- <section>
+        <div class="accordion accordion-flush" id="preguntasFrecuentes">
+          <div class="accordion-item border mb-1">
+            <h2 class="accordion-header" id="flush-p1">
+              <button class="accordion-button txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#p1" aria-expanded="true" aria-controls="p1">
+                ¿es seguro y confiable comprar en ddtech?
+              </button>
+            </h2>
+            <div id="p1" class="accordion-collapse collapse show" aria-labelledby="flush-p1"
+              data-bs-parent="#preguntasFrecuentes">
+              <div class="accordion-body p-5">
+                <p>
+                  Claro, puedes comprar en DDTECH con toda tranquilidad, somos una empresa establecida con más de 8 Años
+                  en la venta de productos en línea con miles de clientes satisfechos, todos nuestros pagos con tarjeta
+                  son por medio de plataformas seguras como PayPal y Mercado Pago, que mantienen tu dinero seguro hasta
+                  tener el producto en tus manos.
+                </p>
+                <p>
+                  Te invitamos a visitarnos en Facebook y consultar la sección quienes somos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-1">
+            <h2 class="accordion-header" id="flush-p2">
+              <button class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#p2" aria-expanded="false" aria-controls="p2">
+                ¿qué métodos de pago aceptan?
+              </button>
+            </h2>
+            <div id="p2" class="accordion-collapse collapse" aria-labelledby="flush-p2"
+              data-bs-parent="#preguntasFrecuentes">
+              <div class="accordion-body p-5">
+                <p>
+                  Para tu comodidad contamos con múltiples métodos para pagar tu compra, los cuales son: Depósito
+                  Bancario, Transferencia Bancaria, Depósito en tiendas Oxxo, Mercado Pago, PayPal, Tarjetas de Débito,
+                  Tarjetas de Crédito.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-1">
+            <h2 class="accordion-header" id="flush-p3">
+              <button class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#p3" aria-expanded="false" aria-controls="p3">
+                ¿cómo encontrar y comprar un producto?
+              </button>
+            </h2>
+            <div id="p3" class="accordion-collapse collapse" aria-labelledby="flush-p3"
+              data-bs-parent="#preguntasFrecuentes">
+              <div class="accordion-body p-5">
+                <p>
+                  Comprar en DDTECH.MX es muy fácil, puedes encontrar el producto que necesitas, utilizando el buscador
+                  o bien utilizar la navegación por categorías, una vez que encuentres el producto que deseas, solo
+                  agrégalo a tu carrito para realizar tu compra.
+                </p>
+                <p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/6yoHL7xEcNw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-1">
+            <h2 class="accordion-header" id="flush-p4">
+              <button class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#p4" aria-expanded="false" aria-controls="p4">
+                ¿cómo recoger mi pedido en una tienda de ddtech?
+              </button>
+            </h2>
+            <div id="p4" class="accordion-collapse collapse" aria-labelledby="flush-p4"
+              data-bs-parent="#preguntasFrecuentes">
+              <div class="accordion-body p-5">
+                <p>
+                  Si te encuentras en Guadalajara es posible que te resulte más cómodo recoger tu pedido, para ello una
+                  vez que tengas los productos en tu carrito de compra, selecciona en la casilla tipo de entrega la
+                  opción “En sucursal” una vez que hayas pagado tu compra, recibirás un correo con el resumen de tu
+                  pedido, por favor responde en ese correo indicándonos en cual de nuestras tiendas deseas recoger tu
+                  paquete, puedes consultar las direcciones de nuestras tiendas <a href="./contacto.html">aquí</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-1">
+            <h2 class="accordion-header" id="flush-p5">
+              <button class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#p5" aria-expanded="false" aria-controls="p5">
+                ¿cuánto cuestan los envios?
+              </button>
+            </h2>
+            <div id="p5" class="accordion-collapse collapse" aria-labelledby="flush-p5"
+              data-bs-parent="#preguntasFrecuentes">
+              <div class="accordion-body p-5">
+                <p>
+                  Nuestros productos pueden llegar a cualquier parte de la república mexicana, para saber el precio de
+                  tu envió, únicamente agrega los productos que deseas a tu carrito de compra, una vez en el carrito
+                  selecciona en la casilla tipo de entrega la opción “A domicilio” la página calculará automáticamente
+                  el precio de tu envió y te lo mostrará.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-1">
+            <h2 class="accordion-header" id="flush-p6">
+              <button class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#p6" aria-expanded="false" aria-controls="p6">
+                ¿cómo crear una cuenta?
+              </button>
+            </h2>
+            <div id="p6" class="accordion-collapse collapse" aria-labelledby="flush-p6"
+              data-bs-parent="#preguntasFrecuentes">
+              <div class="accordion-body p-5">
+                <p>
+                  Para tu comodidad en DDTECH puedes comprar como invitado o registrarte para tener una cuenta, si te
+                  registras, guardaremos tu domicilio para que no tengas que ingresarlo cada vez que realizas una
+                  compra. En la parte superior de la página web da clic en Registrarme, ingresa tus datos en la sección
+                  “crear una nueva cuenta” una vez completados los datos pulsa el botón registrarme.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-1">
+            <h2 class="accordion-header" id="flush-p7">
+              <button class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#p7" aria-expanded="false" aria-controls="p7">
+                ¿cómo pagar con depósito bancario?
+              </button>
+            </h2>
+            <div id="p7" class="accordion-collapse collapse" aria-labelledby="flush-p7"
+              data-bs-parent="#preguntasFrecuentes">
+              <div class="accordion-body p-5">
+                <p>
+                  En el paso 3 del carrito de compra, selecciona como método de pago Deposito, una vez seleccionado la
+                  página te mostrará los números de cuenta, esta misma información la recibirás en tu correo
+                  electrónico, para que puedas tenerla a la mano cuando acudas a pagar. Después de haber realizado tu
+                  pago, deberás enviarnos una foto del comprobante de pago por medio de un correo electrónico a la
+                  dirección ventas@ddtech.mx
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-1">
+            <h2 class="accordion-header" id="flush-p8">
+              <button class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#p8" aria-expanded="false" aria-controls="p8">
+                ¿cómo pagar con transferencia bancaria?
+              </button>
+            </h2>
+            <div id="p8" class="accordion-collapse collapse" aria-labelledby="flush-p8"
+              data-bs-parent="#preguntasFrecuentes">
+              <div class="accordion-body p-5">
+                <p>
+                  En el paso 3 del carrito de compra, selecciona como método de pago Transferencia, una vez seleccionado
+                  la página te mostrara las claves interbancarias, esta misma información la recibirás en tu correo
+                  electrónico, para que puedas tenerla a la mano cuando acudas a pagar. Después de haber realizado tu
+                  pago, deberás enviarnos una foto del comprobante de pago por medio de un correo electrónico a la
+                  dirección ventas@ddtech.mx
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-1">
+            <h2 class="accordion-header" id="flush-p9">
+              <button class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#p9" aria-expanded="false" aria-controls="p9">
+                ¿cómo pagar con deposito en oxxo?
+              </button>
+            </h2>
+            <div id="p9" class="accordion-collapse collapse" aria-labelledby="flush-p9"
+              data-bs-parent="#preguntasFrecuentes">
+              <div class="accordion-body p-5">
+                <p>
+                  En el paso 3 del carrito de compra, selecciona como método de pago Deposito, una vez seleccionado la
+                  página te mostrará los números de cuenta, esta misma información la recibirás en tu correo
+                  electrónico, para que puedas tenerla a la mano cuando acudas a pagar, en la tienda Oxxo indícale al
+                  cajero los datos de número de tarjeta y destinatario, así como el monto que deseas pagar. Después de
+                  haber realizado tu pago, deberás enviarnos una foto del comprobante de pago por medio de un correo
+                  electrónico a la dirección ventas@ddtech.mx
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-1">
+            <h2 class="accordion-header" id="flush-p10"><button class="accordion-button collapsed txt:uppercase fw-bold"
+                type="button" data-bs-toggle="collapse" data-bs-target="#p10" aria-expanded="false" aria-controls="p1
+                0">hea
+                der</button></h2>
+            <div id="p10" class="accordion-collapse collapse" aria-labelledby="flush-p10"
+              data-bs-parent="#preguntasFrecuentes">
+              <div class="accordion-body p-5">
+                <p>cuerpo</p>
+                </d iv>
+
+              </div>
+            </div>
+            <div class="accordion-item border mb-1">
+
+              <h2 class="accordion-header" id="flush-p11"><button
+                  class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#p11" aria-expanded="false" aria-controls="p1
+                1">hea
+                  der</button></h2>
+              <div id="p11" class="accordion-collapse collapse" aria-labelledby="flush-p11"
+                data-bs-parent="#preguntasFrecuentes">
+                <div class="accordion-body p-5">
+                  <p>cuerpo</p>
+                  </d iv>
+
+                </div>
+              </div>
+              <div class="accordion-item border mb-1">
+
+                <h2 class="accordion-header" id="flush-p12"><button
+                    class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#p12" aria-expanded="false" aria-controls="p1
+                2">hea
+                    der</button></h2>
+                <div id="p12" class="accordion-collapse collapse" aria-labelledby="flush-p12"
+                  data-bs-parent="#preguntasFrecuentes">
+                  <div class="accordion-body p-5">
+                    <p>cuerpo</p>
+                    </d iv>
+
+                  </div>
+                </div>
+                <div class="accordion-item border mb-1">
+
+                  <h2 class="accordion-header" id="flush-p13"><button
+                      class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#p13" aria-expanded="false" aria-controls="p1
+                3">hea
+                      der</button></h2>
+                  <div id="p13" class="accordion-collapse collapse" aria-labelledby="flush-p13"
+                    data-bs-parent="#preguntasFrecuentes">
+                    <div class="accordion-body p-5">
+                      <p>cuerpo</p>
+                      </d iv>
+
+                    </div>
+                  </div>
+                  <div class="accordion-item border mb-1">
+
+                    <h2 class="accordion-header" id="flush-p14"><button
+                        class="accordion-button collapsed txt:uppercase fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#p14" aria-expanded="false" aria-controls="p1
+                4">hea
+                        der</button></h2>
+                    <div id="p14" class="accordion-collapse collapse" aria-labelledby="flush-p14"
+                      data-bs-parent="#preguntasFrecuentes">
+                      <div class="accordion-body p-5">
+                        <p>cuerpo</p>
+                        </d iv>
+
+                      </div>
+                    </div>
+                    <div class="accordion-item border mb-1">
+
+                      <h2 class="accordion-header" id="flush-p15"><button
+                          class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#p15" aria-expanded="false" aria-controls="p1
+                5">hea
+                          der</button></h2>
+                      <div id="p15" class="accordion-collapse collapse" aria-labelledby="flush-p15"
+                        data-bs-parent="#preguntasFrecuentes">
+                        <d class="accordion-body p-5">
+                          <p>cuerpo</p>
+                        </d iv>
+
+                      </div>
+                    </div>
+                    <div class="accordion-item border mb-1">
+
+                      <h2 class="accordion-header" id="flush-p16"><button
+                          class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#p16" aria-expanded="false" aria-controls="p1
+                6">hea
+                          der</button></h2>
+                      <div id="p16" class="accordion-collapse collapse" aria-labelledby="flush-p16"
+                        data-bs-parent="#preguntasFrecuentes">
+                        <div class="accordion-body p-5">
+                          <p>cuerpo</p>
+                          </d iv>
+
+                        </div>
+                      </div>
+                      <div class="accordion-item border mb-1">
+
+                        <h2 class="accordion-header" id="flush-p17"><button
+                            class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#p17" aria-expanded="false" aria-controls="p1
+                7">hea
+                            der</button></h2>
+                        <div id="p17" class="accordion-collapse collapse" aria-labelledby="flush-p17"
+                          data-bs-parent="#preguntasFrecuentes">
+                          <div class="accordion-body p-5">
+                            <p>cuerpo</p>
+                            </d iv>
+
+                          </div>
+                        </div>
+                        <div class="accordion-item border mb-1">
+
+                          <h2 class="accordion-header" id="flush-p18"><button
+                              class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#p18" aria-expanded="false" aria-controls="p1
+                8">hea
+                              der</button></h2>
+                          <div id="p18" class="accordion-collapse collapse" aria-labelledby="flush-p18"
+                            data-bs-parent="#preguntasFrecuentes">
+                            <div class="accordion-body p-5">
+                              <p>cuerpo</p>
+                              </d iv>
+
+                            </div>
+                          </div>
+                          <div class="accordion-item border mb-1">
+
+                            <h2 class="accordion-header" id="flush-p19"><button
+                                class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#p19" aria-expanded="false" aria-controls="p1
+                9">hea
+                                der</button></h2>
+                            <div id="p19" class="accordion-collapse collapse" aria-labelledby="flush-p19"
+                              data-bs-parent="#preguntasFrecuentes">
+                              <div class="accordion-body p-5">
+                                <p>cuerpo</p>
+                                </d iv>
+
+                              </div>
+                            </div>
+                            <div class="accordion-item border mb-1">
+
+                              <h2 class="accordion-header" id="flush-p20"><button
+                                  class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                                  data-bs-toggle="collapse" data-bs-target="#p20" aria-expanded="false" aria-controls="p2
+                0">hea
+                                  der</button></h2>
+                              <div id="p20" class="accordion-collapse collapse" aria-labelledby="flush-p20"
+                                data-bs-parent="#preguntasFrecuentes">
+                                <div class="accordion-body p-5">
+                                  <p>cuerpo</p>
+                                  </d iv>
+
+                                </div>
+                              </div>
+                              <div class="accordion-item border mb-1">
+
+                                <h2 class="accordion-header" id="flush-p21"><button
+                                    class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#p21" aria-expanded="false" aria-controls="p2
+                1">hea
+                                    der</button></h2>
+                                <div id="p21" class="accordion-collapse collapse" aria-labelledby="flush-p21"
+                                  data-bs-parent="#preguntasFrecuentes">
+                                  <div class="accordion-body p-5">
+                                    <p>cuerpo</p>
+                                    </d iv>
+
+                                  </div>
+                                </div>
+                                <div class="accordion-item border mb-1">
+
+                                  <h2 class="accordion-header" id="flush-p22"><button
+                                      class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                                      data-bs-toggle="collapse" data-bs-target="#p22" aria-expanded="false"
+                                      aria-controls="p2
+                2">hea
+                                      der</button></h2>
+                                  <div id="p22" class="accordion-collapse collapse" aria-labelledby="flush-p22"
+                                    data-bs-parent="#preguntasFrecuentes">
+                                    <div class="accordion-body p-5">
+                                      <p>cuerpo</p>
+                                      </d iv>
+
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item border mb-1">
+
+                                    <h2 class="accordion-header" id="flush-p23"><button
+                                        class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#p23" aria-expanded="false"
+                                        aria-controls="p2
+                3">hea
+                                        der</button></h2>
+                                    <div id="p23" class="accordion-collapse collapse" aria-labelledby="flush-p23"
+                                      data-bs-parent="#preguntasFrecuentes">
+                                      <div class="accordion-body p-5">
+                                        <p>cuerpo</p>
+                                        </d iv>
+
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item border mb-1">
+
+                                      <h2 class="accordion-header" id="flush-p24"><button
+                                          class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#p24" aria-expanded="false"
+                                          aria-controls="p2
+                4">hea
+                                          der</button></h2>
+                                      <div id="p24" class="accordion-collapse collapse" aria-labelledby="flush-p24"
+                                        data-bs-parent="#preguntasFrecuentes">
+                                        <div class="accordion-body p-5">
+                                          <p>cuerpo</p>
+                                          </d iv>
+
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item border mb-1">
+
+                                        <h2 class="accordion-header" id="flush-p25"><button
+                                            class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#p25" aria-expanded="false"
+                                            aria-controls="p2
+                5">hea
+                                            der</button></h2>
+                                        <div id="p25" class="accordion-collapse collapse" aria-labelledby="flush-p25"
+                                          data-bs-parent="#preguntasFrecuentes">
+                                          <div class="accordion-body p-5">
+                                            <p>cuerpo</p>
+                                            </d iv>
+
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item border mb-1">
+
+                                          <h2 class="accordion-header" id="flush-p26"><button
+                                              class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                                              data-bs-toggle="collapse" data-bs-target="#p26" aria-expanded="false"
+                                              aria-controls="p2
+                6">hea
+                                              der</button></h2>
+                                          <div id="p26" class="accordion-collapse collapse" aria-labelledby="flush-p26"
+                                            data-bs-parent="#preguntasFrecuentes">
+                                            <div class="accordion-body p-5">
+                                              <p>cuerpo</p>
+                                              </d iv>
+
+                                            </div>
+                                          </div>
+                                          <div class="accordion-item border mb-1">
+
+                                            <h2 class="accordion-header" id="flush-p27"><button
+                                                class="accordion-button collapsed txt:uppercase fw-bold" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#p27" aria-expanded="false"
+                                                aria-controls="p2
+                7">hea
+                                                der</button></h2>
+                                            <div id="p27" class="accordion-collapse collapse"
+                                              aria-labelledby="flush-p27" data-bs-parent="#preguntasFrecuentes">
+                                              <div class="accordion-body p-5">
+                                                <p>cuerpo</p>
+                                                </d iv>
+
+                                              </div>
+                                            </div>
+
+
+
+                                          </div>
+      </section> -->
+
+      <section>
+        <div class="accordion accordion-flush" id="preguntasFrecuentes">
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- Info y data -->
+    <div class="pt-5 pb-5 bg:c:dark">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <!-- Primera lista -->
+          <div class="col-md-2">
+            <ul class="list-group list-group:effect border-0">
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Pride
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none" href="./configurar_pc.html">
+                  Configurar
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none" href="./nosotros.html">
+                  Nosotros
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none" href="./promocion.html">
+                  Promociones
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0 b:r:0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none" href="./contacto.html">
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Segunda lista -->
+          <div class="col-md-2">
+            <ul class="list-group list-group:effect border-0">
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none">
+                  Pride
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none" href="./preguntas_frecuentes.html">
+                  Preguntas frecuentes
+                </a>
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg:c:transparent border-0 text-white border-bottom border-secondary text-start ps-0 b:r:0">
+                <span class="small pe-3">●</span>
+                <a class="small text-white text-decoration-none" href="./aviso_legal.html">
+                  Aviso legal
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Logo & copyright -->
+          <div class="col-md-2 text-center text-white small">
+            <img src="../images/ninis-isowhite.png" alt="" width="100">
+            <p class="mb-0">Ninis © 2021</p>
+            <p>Desarrollado por <span class="fw-bold">dpw</span></p>
+          </div>
+
+          <!-- Informacion de contacto -->
+          <div class="col-md-2 text-center text-white small">
+            <div class="d-flex mb-2">
+              <div class="flex-shrink-0">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-start">
+                Calle Jose María Castilleros 3415
+                Col. Lomas de Polanco, CP. 44960
+                Guadalajara, Jalisco, México
+              </div>
+            </div>
+            <div class="d-flex mb-2">
+              <div class="flex-shrink-0">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-start">
+                (33) 15 23 28 23
+              </div>
+            </div>
+            <div class="d-flex mb-3">
+              <div class="flex-shrink-0">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-start">
+                ventas@ddtech.mx
+              </div>
+            </div>
+            <div class="d-flex">
+              <a href="https://www.facebook.com/" target="_blank" class="me-2">
+                <span class="badge bg-primary">
+                  <i class="bi bi-hand-thumbs-up-fill"></i>
+                  Me gusta
+                </span>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <span class="badge bg-primary">Compartir</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="col-md-2 text-center text-white">
+            <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-facebook me-4 text-white"></i></span>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-youtube me-4 text-white"></i></span>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="text-decoration-none">
+              <span class=" h4"><i class="bi bi-twitter me-4 text-white"></i></span>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-instagram me-4 text-white"></i></span>
+            </a>
+            <a href="https://www.google.com/" target="_blank" class="text-decoration-none">
+              <span class="h4"><i class="bi bi-google me-4 text-white"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Formas de pago -->
+  <aside>
+    <div class="bg-dark">
+      <div class="container py-3">
+        <div class="row d-flex align-items-center justify-content-end">
+          <div class="col-lg-1 d-flex justify-content-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Banco-agricola-sv.png" alt="" width="80">
+          </div>
+          <div class="col-lg-1 d-flex justify-content-center">
+            <img src="https://logos-marcas.com/wp-content/uploads/2020/04/Visa-Emblema.png" alt="" width="80">
+          </div>
+          <div class="col-lg-1 d-flex justify-content-center">
+            <img src="https://1000marcas.net/wp-content/uploads/2019/12/MasterCard-Logo.png" alt="" width="80">
+          </div>
+          <div class="col-lg-1 d-flex justify-content-center">
+            <img src="https://logos-marcas.com/wp-content/uploads/2020/08/Bitcoin-Logo.png" alt="" width="80">
+          </div>
+          <div class="col-lg-1 d-flex justify-content-center">
+            <img src="https://logos-marcas.com/wp-content/uploads/2020/04/PayPal-Logo.png" alt="" width="80">
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="../plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="../js/estadoCarrito.js"></script>
+  <script src="../js/preguntas_frecuentes.js"></script>
+</body>
+
+</html>

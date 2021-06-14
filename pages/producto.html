@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <header>
     <!-- Navbar secundario -->
     <div class="container">
@@ -103,7 +102,7 @@
               <a class="nav-link" href="#">Aorus PC</a>
             </li>
           </ul>
-          <form class="d-flex">
+          <form class="d-flex ">
             <div class="input-group">
               <input type="text" class="form-control"
                 style="border-bottom-left-radius: 20px; border-top-left-radius: 20px;">
@@ -118,54 +117,116 @@
     </nav>
   </header>
 
-  <main class="my-5">
-    <div class="container">
-      <div class="row">
-        <!-- Formulario inicio sesion -->
-        <div class="col-md-6">
-          <h4 class="mb-3 pb-3 border-bottom">Iniciar sesion</h4>
-          <p class="text-muted">Bienvenido, entra a tu cuenta</p>
-          <form class="mt-5">
-            <div class="mb-4">
-              <label for="inicio_email" class="form-label">Correo electronico</label>
-              <input type="email" class="form-control" id="inicio_email" aria-describedby="emailHelp"
-                placeholder="sgalan@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-            </div>
-            <div class="mb-4">
-              <label for="inicio_pass" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="inicio_pass" required>
-            </div>
-            <p class="mt-5 mb-3 small text-end">
-              <a href="./recuperar_password.html" class="text-decoration-none">¿Olvidaste tú contraseña?</a>
-            </p>
-            <button type="submit" class="btn btn-outline-secondary btn-sm txt:uppercase">Iniciar sesion</button>
-          </form>
-        </div>
+  <main>
+    <div class="container mt-4 mb-4">
+      <div class="row gap-3">
+        <!-- Categorias -->
+        <div class="col-md-3 p-0">
+          <ul class="list-group">
+            <li class="list-group-item d-flex b:r:0">
+              <i class="bi bi-mouse me-4"></i>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./productos/categoria.html?nombre=accesorios">
+                Accesorios
+              </a>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
 
-        <!-- Formulario registro -->
-        <div class="col-md-6">
-          <h4 class="mb-3 pb-3 border-bottom">Crear una cuenta nueva</h4>
-          <p class="text-muted">Create tu cuenta con tu usuario, correo electrónico y contraseña.</p>
-          <form class="mt-5">
-            <div class="mb-4">
-              <label for="registro_user" class="form-label">Usuario</label>
-              <input type="text" class="form-control" id="registro_user" aria-describedby="emailHelp" required>
+            <li class="list-group-item d-flex">
+              <i class="bi bi-mic me-4"></i>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./productos/categoria.html?nombre=audio">
+                Audio
+              </a>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+
+            <li class="list-group-item d-flex">
+              <i class="bi bi-laptop me-4"></i>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./productos/categoria.html?nombre=computadoras">
+                Computadoras
+              </a>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+
+            <li class="list-group-item d-flex">
+              <i class="bi bi-upc-scan me-4"></i>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./productos/categoria.html?nombre=componentes">
+                Componentes
+              </a>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+
+            <li class="list-group-item d-flex">
+              <i class="bi bi-menu-app me-4"></i>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./productos/categoria.html?nombre=almacenamiento">
+                Almacenamiento
+              </a>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+
+            <li class="list-group-item d-flex">
+              <i class="bi bi-printer me-4"></i>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./productos/categoria.html?nombre=impresion">
+                Impresion
+              </a>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+
+            <li class="list-group-item d-flex">
+              <i class="bi bi-disc me-4"></i>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./productos/categoria.html?nombre=software">
+                Software
+              </a>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+
+            <li class="list-group-item d-flex">
+              <i class="bi bi-display me-4"></i>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./productos/categoria.html?nombre=monitores">
+                Monitores
+              </a>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+
+            <li class="list-group-item d-flex">
+              <i class="bi bi-hdd-network me-4"></i>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./productos/categoria.html?nombre=redes">
+                Redes
+              </a>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+
+            <li class="list-group-item d-flex b:r:0">
+              <i class="bi bi-battery me-4"></i>
+              <a class="flex-grow-1 text-decoration-none cursor:pointer text-dark"
+                href="./productos/categoria.html?nombre=energia">
+                Energia
+              </a>
+              <i class="bi bi-arrow-right-circle"></i>
+            </li>
+          </ul>
+        </div>
+        <!-- Contenido principal -->
+        <div class="col p-0">
+          <div class="row">
+            <div class="col-md-5">
+              <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Injeccion de la data a traves de javascript -->
+              </div>
             </div>
-            <div class="mb-4">
-              <label for="registro_email" class="form-label">Correo electronico</label>
-              <input type="email" class="form-control" id="registro_email" placeholder="sgalan@gmail.com"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+            <div class="col" id="productosContainer">
+              <!-- Injeccion de la data a traves de javascript -->
             </div>
-            <div class="mb-4">
-              <label for="registro_pass" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="registro_pass" required>
-            </div>
-            <div class="mb-4">
-              <label for="registro_confirmar_pass" class="form-label">Confirmar contraseña</label>
-              <input type="password" class="form-control" id="registro_confirmar_pass" required>
-            </div>
-            <button type="submit" class="btn btn-outline-secondary btn-sm txt:uppercase">Registrarme</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -341,6 +402,8 @@
 
   <script src="../plugins/bootstrap/bootstrap.min.js"></script>
   <script src="../js/estadoCarrito.js"></script>
+  <script src="../js/producto.js"></script>
+  <script src="../js/global.js"></script>
 </body>
 
 </html>
