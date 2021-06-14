@@ -50,6 +50,15 @@
       // if the click was on the redirect Url
       if (e.target.id === 'productoUrl') return;
 
+      // Valida si el click no trae metadata, para no efectuar agregar al carrito
+      if (
+        !e.target.dataset['productId'] ||
+        !e.target.dataset['productImageUrl'] ||
+        !e.target.dataset['productDescription'] ||
+        !e.target.dataset['productPrice']
+      )
+        return;
+
       let Alert = document.getElementById('alert');
 
       let product = {
@@ -59,8 +68,6 @@
         quantity: 1,
         price: e.target.dataset['productPrice'],
       };
-
-      console.log('product', product);
 
       // Agregar producto al carrito
       agregarProductoACarrito(product);
