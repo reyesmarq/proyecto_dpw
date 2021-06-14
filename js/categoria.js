@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', async (e) => {
           <div class="card-footer d-flex justify-content-between bg-white border-0">
             <button class="btn btn-outline-secondary btn-sm"
               data-product-id=${id}
-              data-product-image-url=${imageUrl}
-              data-product-description=${description}
+              data-product-image-url=${images[0]}
+              data-product-description="${description}"
               data-product-price=${price}
             >
               <i class="bi bi-cart me-2 pe-none"></i>
@@ -68,5 +68,5 @@ document.addEventListener('DOMContentLoaded', async (e) => {
     .toString();
 
   ProductosContainer.innerHTML = productosHtml
-  nombreCategoria.innerHTML = nombre
+  NombreCategoria.innerHTML = nombre
 });

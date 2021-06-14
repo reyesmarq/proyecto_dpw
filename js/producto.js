@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async (e) => {
   if (!producto) window.location.href = '../index.html';
 
   let Carousel = document.getElementById('carousel');
-  let ProductData = document.getElementById('productData');
+  let ProductData = document.getElementById('productosContainer');
   let images = producto.images.map((imagen) => `../images/${imagen}.png`);
 
   let carouselItemsHtml = images
@@ -86,8 +86,13 @@ document.addEventListener('DOMContentLoaded', async (e) => {
     <span class="me-3">
       <input type="number" value="1" class="form-control" style="width: 100px" min="1" max="10">
     </span>
-    <button class="btn btn-secondary">
-      <i class="bi bi-cart me-2"></i>
+    <button class="btn btn-outline-secondary btn-sm"
+      data-product-id=${producto.id}
+      data-product-image-url=${producto.images[0]}
+      data-product-description="${producto.description}"
+      data-product-price=${producto.price}
+    >
+      <i class="bi bi-cart me-2 pe-none"></i>
       Agregar al carrito
     </button>
   </div>
