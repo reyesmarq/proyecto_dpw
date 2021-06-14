@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
       price: e.target.dataset['productPrice'],
     };
 
-    console.log('product', product);
-
     // Agregar producto al carrito
     agregarProductoACarrito(product);
 
