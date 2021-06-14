@@ -4,6 +4,10 @@
   document.addEventListener('DOMContentLoaded', (e) => {
     if (!TBody) TBody = document.getElementById('checkoutBody');
     const BtnBorrarCarrito = document.getElementById('btnBorrarCarrito');
+    let Entrega = document.getElementById('entrega');
+
+    // Actualizando el total
+    actualizarTotal();
 
     // build the checkout
     buildCheckout();
@@ -24,7 +28,12 @@
     BtnBorrarCarrito.addEventListener('click', () => {
       localStorage.setItem('checkout', JSON.stringify([]));
 
+      actualizarTotal();
       buildCheckout();
+    });
+
+    Entrega.addEventListener('change', (e) => {
+      actualizarTotal();
     });
   });
 
@@ -54,7 +63,7 @@
             product.price * product.quantity
           ).toFixed(2)}</td>
           <td class="text-center p-4">
-            <i class="bi bi-trash" data-product-id="${
+            <i class="bi bi-trash cursor:pointer text-danger" data-product-id="${
               product.id
             }" data-action="delete"></i>
           </td>
@@ -79,6 +88,9 @@
     // Guardamos la nueva informacion del arreglo
     localStorage.setItem('checkout', JSON.stringify(products));
 
+    // calculando el total
+    actualizarTotal();
+
     // Contruimos nuevamente el layout
     buildCheckout();
   }
@@ -100,7 +112,37 @@
     // updateing the local storage with the new products object
     localStorage.setItem('checkout', JSON.stringify(products));
 
+    // Actualizando el total
+    actualizarTotal();
+
     // re- render the html
     buildCheckout();
+  }
+
+  function actualizarTotal() {
+    let Subtotal = document.getElementById('subtotal');
+    let Envio = document.getElementById('envio');
+    let Total = document.getElementById('total');
+    let productos = JSON.parse(localStorage.getItem('checkout'));
+    let entrega = document.getElementById('entrega').value;
+    let envio = entrega == 'domicilio' ? 10 : 0;
+    let total;
+    let subTotal = productos.reduce((total, product) => {
+      let { quantity, price } = product;
+      let accumulative = Number(quantity) * Number(price);
+
+      return total + accumulative;
+    }, 0);
+
+    Subtotal.innerHTML = `$${subTotal.toFixed(2)}`;
+
+    total = subTotal * 1.13;
+
+    if (entrega == 'domicilio') {
+      total = subTotal * 1.13 + 10;
+    }
+
+    Envio.innerHTML = `$${envio.toFixed(2)}`;
+    Total.innerHTML = `$${total.toFixed(2)}`;
   }
 })();
