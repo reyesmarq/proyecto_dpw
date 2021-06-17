@@ -48,21 +48,21 @@
       id: 7,
       header: '¿cómo pagar con depósito bancario?',
       body: [
-        'En el paso 3 del carrito de compra, selecciona como método de pago Deposito, una vez seleccionado la página te mostrará los números de cuenta, esta misma información la recibirás en tu correo electrónico, para que puedas tenerla a la mano cuando acudas a pagar. Después de haber realizado tu pago, deberás enviarnos una foto del comprobante de pago por medio de un correo electrónico a la dirección ventas@ddtech.mx',
+        'En el paso 3 del carrito de compra, selecciona como método de pago Deposito, una vez seleccionado la página te mostrará los números de cuenta, esta misma información la recibirás en tu correo electrónico, para que puedas tenerla a la mano cuando acudas a pagar. Después de haber realizado tu pago, deberás enviarnos una foto del comprobante de pago por medio de un correo electrónico a la dirección ventas@ninis.com.sv',
       ],
     },
     {
       id: 8,
       header: '¿cómo pagar con transferencia bancaria?',
       body: [
-        'En el paso 3 del carrito de compra, selecciona como método de pago Transferencia, una vez seleccionado la página te mostrara las claves interbancarias, esta misma información la recibirás en tu correo electrónico, para que puedas tenerla a la mano cuando acudas a pagar. Después de haber realizado tu pago, deberás enviarnos una foto del comprobante de pago por medio de un correo electrónico a la dirección ventas@ddtech.mx',
+        'En el paso 3 del carrito de compra, selecciona como método de pago Transferencia, una vez seleccionado la página te mostrara las claves interbancarias, esta misma información la recibirás en tu correo electrónico, para que puedas tenerla a la mano cuando acudas a pagar. Después de haber realizado tu pago, deberás enviarnos una foto del comprobante de pago por medio de un correo electrónico a la dirección ventas@ninis.com.sv',
       ],
     },
     {
       id: 9,
       header: '¿cómo pagar con deposito en oxxo?',
       body: [
-        'En el paso 3 del carrito de compra, selecciona como método de pago Deposito, una vez seleccionado la página te mostrará los números de cuenta, esta misma información la recibirás en tu correo electrónico, para que puedas tenerla a la mano cuando acudas a pagar, en la tienda Oxxo indícale al cajero los datos de número de tarjeta y destinatario, así como el monto que deseas pagar. Después de haber realizado tu pago, deberás enviarnos una foto del comprobante de pago por medio de un correo electrónico a la dirección ventas@ddtech.mx',
+        'En el paso 3 del carrito de compra, selecciona como método de pago Deposito, una vez seleccionado la página te mostrará los números de cuenta, esta misma información la recibirás en tu correo electrónico, para que puedas tenerla a la mano cuando acudas a pagar, en la tienda Oxxo indícale al cajero los datos de número de tarjeta y destinatario, así como el monto que deseas pagar. Después de haber realizado tu pago, deberás enviarnos una foto del comprobante de pago por medio de un correo electrónico a la dirección ventas@ninis.com.sv',
       ],
     },
     {
