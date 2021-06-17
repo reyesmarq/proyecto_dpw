@@ -8,6 +8,7 @@
   <title>Indice | ninis</title>
   <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./plugins/bootstrap/icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="./plugins/jquery/slick/slick.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -260,8 +261,8 @@
 
   <!-- Footer cards -->
   <aside>
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid my-0">
+      <div class="row" id="tarjetas">
         <div class="col-md-4 p-0">
           <div class="card text-white border-0 footer:card bg:sheet">
             <img src="https://concepto.de/wp-content/uploads/2018/08/placa-madre4-e1534448782751.jpg"
@@ -287,6 +288,20 @@
                 llena tus partidas de poder con el equipo de Pride.
               </p>
               <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2">Ir al sitio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-0">
+          <div class="card text-white border-0 footer:card bg:sheet">
+            <img src="https://www.residentevil.com/village/assets/images/common/share.png"
+              class="card-img card:bg:img b:r:0" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end zi:tooltip">
+              <h3 class="card-title pb-2">Código Trauma Pack RE Village</h3>
+              <p class="card-text pb-2">
+                Aprovecha esta promo de HyperX
+              </p>
+              <a class="card-text txt:uppercase text-decoration-none text-white border-top pt-2"
+                href="./pages/promocion.html">Ir al sitio</a>
             </div>
           </div>
         </div>
@@ -476,10 +491,22 @@
     </div>
   </aside>
 
+  
   <script src="./plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="./plugins/jquery/jquery.js"></script>
+  <script src="./plugins/jquery/slick/slick.js"></script>
   <script src="./js/estadoCarrito.js"></script>
   <script src="./js/home.js"></script>
   <script src="./js/global.js"></script>
+  <script>
+    $('#tarjetas').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+    });
+  </script>
 </body>
 
 </html>
