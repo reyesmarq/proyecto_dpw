@@ -1,8 +1,8 @@
 (() => {
   document.addEventListener('DOMContentLoaded', async (e) => {
-    let productos = await fetch('../data/productos.json').then((res) =>
-      res.json()
-    );
+    let productos = await fetch(
+      'https://raw.githubusercontent.com/reyesmarq/proyecto_dpw/main/data/productos.json'
+    ).then((res) => res.json());
 
     let ProductosContainer = document.getElementById('productosContainer');
 

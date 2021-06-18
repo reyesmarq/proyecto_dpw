@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', async (e) => {
   // si no existe id por parametro nos redirecciona a index
   if (!nombre) window.location.href = '../../index.html';
 
-  let productos = await fetch('../../data/productos.json').then((res) =>
-    res.json()
-  );
+  let productos = await fetch(
+    'https://raw.githubusercontent.com/reyesmarq/proyecto_dpw/main/data/productos.json'
+  ).then((res) => res.json());
 
   let productosCategoria = productos.filter((p) => p.categoria == nombre);
 
@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', async (e) => {
     window.location.href = '../../index.html';
 
   let ProductosContainer = document.getElementById('productosContainer');
-  let NombreCategoria = document.getElementById('nombreCategoria')
+  let NombreCategoria = document.getElementById('nombreCategoria');
 
-  let productosHtml =  productosCategoria
+  let productosHtml = productosCategoria
     .map((producto, index) => {
       const { images, description, price, id, categoria } = producto;
       const imageUrl = `../../images/${images[0]}.png`;
@@ -67,6 +67,6 @@ document.addEventListener('DOMContentLoaded', async (e) => {
     .replace(/\,/g, '')
     .toString();
 
-  ProductosContainer.innerHTML = productosHtml
-  NombreCategoria.innerHTML = nombre
+  ProductosContainer.innerHTML = productosHtml;
+  NombreCategoria.innerHTML = nombre;
 });

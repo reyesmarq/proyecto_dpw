@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', async (e) => {
   // si no existe id por parametro nos redirecciona a index
   if (!id) window.location.href = '../index.html';
 
-  let productos = await fetch('../data/productos.json').then((res) =>
-    res.json()
-  );
+  let productos = await fetch(
+    'https://raw.githubusercontent.com/reyesmarq/proyecto_dpw/main/data/productos.json'
+  ).then((res) => res.json());
 
   let producto = productos.find((p) => p.id == id);
 
